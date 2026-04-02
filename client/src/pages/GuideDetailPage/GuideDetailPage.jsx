@@ -128,7 +128,7 @@ export default function GuideDetailPage() {
         {/* Hero */}
         <div className={styles.hero}>
           {guide.coverImage && (
-            <img src={guide.coverImage} alt={guide.title} className={styles.heroCover} />
+            <img src={guide.coverImage} alt={guide.title} className={styles.heroCover} fetchpriority="high" />
           )}
           <div className={styles.heroScrim} />
           {guide.isSponsored && (

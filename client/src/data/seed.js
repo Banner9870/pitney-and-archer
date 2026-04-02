@@ -9,27 +9,27 @@ export const BADGES = [
 
 // 21 Unsplash URLs for the guide creation cover photo picker
 export const COVER_PHOTOS = [
-  'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800', // Chicago skyline
-  'https://images.unsplash.com/photo-1494522358652-f30e61a60313?w=800', // Chicago river
-  'https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=800', // coffee shop
-  'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800', // restaurant interior
-  'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800', // live music
-  'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800', // farmers market
-  'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800', // bar/restaurant
-  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800', // park/nature
-  'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800', // coffee
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800', // people/community
-  'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800', // bookstore
-  'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800', // food
-  'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800', // concert
-  'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800', // Chicago architecture
-  'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800', // autumn park
-  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800', // wine bar
-  'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800', // food platter
-  'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800', // diverse group
-  'https://images.unsplash.com/photo-1571104508999-893933ded431?w=800', // neighborhood street
-  'https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?w=800', // Chicago street
-  'https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800', // Chicago winter/snow
+  'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&auto=format&q=80', // Chicago skyline
+  'https://images.unsplash.com/photo-1494522358652-f30e61a60313?w=800&auto=format&q=80', // Chicago river
+  'https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=800&auto=format&q=80', // coffee shop
+  'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&q=80', // restaurant interior
+  'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80', // live music
+  'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&auto=format&q=80', // farmers market
+  'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80', // bar/restaurant
+  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&q=80', // park/nature
+  'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80', // coffee
+  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&q=80', // people/community
+  'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80', // bookstore
+  'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80', // food
+  'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&q=80', // concert
+  'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80', // Chicago architecture
+  'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800&auto=format&q=80', // autumn park
+  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&q=80', // wine bar
+  'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&auto=format&q=80', // food platter
+  'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&q=80', // diverse group
+  'https://images.unsplash.com/photo-1571104508999-893933ded431?w=800&auto=format&q=80', // neighborhood street
+  'https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?w=800&auto=format&q=80', // Chicago street
+  'https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&auto=format&q=80', // Chicago winter/snow
 ]
 
 // ---------------------------------------------------------------------------
@@ -244,103 +244,103 @@ export const SEED_USERS = [
 
 export const SEED_PLACES = [
   // Humboldt Park
-  { id: 'place-cafe-colao', name: 'Café Colao', address: '2638 W Division St, Chicago, IL 60622', neighborhood: 'Humboldt Park', category: 'cafe', rating: 4.7, reviewCount: 312, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800' },
-  { id: 'place-humboldt-natural', name: 'Humboldt Park Natural Area', address: 'N Sacramento Ave & W North Ave, Chicago, IL 60647', neighborhood: 'Humboldt Park', category: 'park', rating: 4.8, reviewCount: 890, coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800' },
-  { id: 'place-ca-wine-bar', name: 'CA Wine Bar', address: '2723 W Division St, Chicago, IL 60622', neighborhood: 'Humboldt Park', category: 'bar', rating: 4.5, reviewCount: 187, coverImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800' },
-  { id: 'place-borinquen', name: 'Borinquen Restaurant', address: '1720 N California Ave, Chicago, IL 60647', neighborhood: 'Humboldt Park', category: 'restaurant', rating: 4.6, reviewCount: 423, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800' },
-  { id: 'place-humboldt-lagoon', name: 'Humboldt Park Lagoon', address: '1400 N Sacramento Ave, Chicago, IL 60622', neighborhood: 'Humboldt Park', category: 'park', rating: 4.6, reviewCount: 540, coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800' },
+  { id: 'place-cafe-colao', name: 'Café Colao', address: '2638 W Division St, Chicago, IL 60622', neighborhood: 'Humboldt Park', category: 'cafe', rating: 4.7, reviewCount: 312, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80' },
+  { id: 'place-humboldt-natural', name: 'Humboldt Park Natural Area', address: 'N Sacramento Ave & W North Ave, Chicago, IL 60647', neighborhood: 'Humboldt Park', category: 'park', rating: 4.8, reviewCount: 890, coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&q=80' },
+  { id: 'place-ca-wine-bar', name: 'CA Wine Bar', address: '2723 W Division St, Chicago, IL 60622', neighborhood: 'Humboldt Park', category: 'bar', rating: 4.5, reviewCount: 187, coverImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&q=80' },
+  { id: 'place-borinquen', name: 'Borinquen Restaurant', address: '1720 N California Ave, Chicago, IL 60647', neighborhood: 'Humboldt Park', category: 'restaurant', rating: 4.6, reviewCount: 423, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80' },
+  { id: 'place-humboldt-lagoon', name: 'Humboldt Park Lagoon', address: '1400 N Sacramento Ave, Chicago, IL 60622', neighborhood: 'Humboldt Park', category: 'park', rating: 4.6, reviewCount: 540, coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&q=80' },
 
   // Hyde Park
-  { id: 'place-powells-books', name: "Powell's Books", address: '1501 E 57th St, Chicago, IL 60637', neighborhood: 'Hyde Park', category: 'bookstore', rating: 4.8, reviewCount: 621, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800' },
-  { id: 'place-valois', name: 'Valois Restaurant', address: '1518 E 53rd St, Chicago, IL 60615', neighborhood: 'Hyde Park', category: 'restaurant', rating: 4.5, reviewCount: 834, coverImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800' },
-  { id: 'place-promontory', name: 'The Promontory', address: '5311 S Lake Park Ave W, Chicago, IL 60615', neighborhood: 'Hyde Park', category: 'music venue', rating: 4.7, reviewCount: 412, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800' },
-  { id: 'place-57th-street-books', name: '57th Street Books', address: '1301 E 57th St, Chicago, IL 60637', neighborhood: 'Hyde Park', category: 'bookstore', rating: 4.9, reviewCount: 389, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800' },
-  { id: 'place-medici', name: 'Medici on 57th', address: '1327 E 57th St, Chicago, IL 60637', neighborhood: 'Hyde Park', category: 'cafe', rating: 4.4, reviewCount: 701, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800' },
-  { id: 'place-museum-science-industry', name: 'Museum of Science and Industry', address: '5700 S Lake Shore Dr, Chicago, IL 60637', neighborhood: 'Hyde Park', category: 'museum', rating: 4.7, reviewCount: 3200, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800' },
-  { id: 'place-hyde-park-jazz', name: 'Hyde Park Jazz Festival', address: 'Various venues, Hyde Park', neighborhood: 'Hyde Park', category: 'event venue', rating: 4.9, reviewCount: 256, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800' },
-  { id: 'place-daley-bicentennial', name: 'Nichols Park', address: '1355 E 53rd St, Chicago, IL 60615', neighborhood: 'Hyde Park', category: 'park', rating: 4.5, reviewCount: 198, coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800' },
+  { id: 'place-powells-books', name: "Powell's Books", address: '1501 E 57th St, Chicago, IL 60637', neighborhood: 'Hyde Park', category: 'bookstore', rating: 4.8, reviewCount: 621, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80' },
+  { id: 'place-valois', name: 'Valois Restaurant', address: '1518 E 53rd St, Chicago, IL 60615', neighborhood: 'Hyde Park', category: 'restaurant', rating: 4.5, reviewCount: 834, coverImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&q=80' },
+  { id: 'place-promontory', name: 'The Promontory', address: '5311 S Lake Park Ave W, Chicago, IL 60615', neighborhood: 'Hyde Park', category: 'music venue', rating: 4.7, reviewCount: 412, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80' },
+  { id: 'place-57th-street-books', name: '57th Street Books', address: '1301 E 57th St, Chicago, IL 60637', neighborhood: 'Hyde Park', category: 'bookstore', rating: 4.9, reviewCount: 389, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80' },
+  { id: 'place-medici', name: 'Medici on 57th', address: '1327 E 57th St, Chicago, IL 60637', neighborhood: 'Hyde Park', category: 'cafe', rating: 4.4, reviewCount: 701, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80' },
+  { id: 'place-museum-science-industry', name: 'Museum of Science and Industry', address: '5700 S Lake Shore Dr, Chicago, IL 60637', neighborhood: 'Hyde Park', category: 'museum', rating: 4.7, reviewCount: 3200, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80' },
+  { id: 'place-hyde-park-jazz', name: 'Hyde Park Jazz Festival', address: 'Various venues, Hyde Park', neighborhood: 'Hyde Park', category: 'event venue', rating: 4.9, reviewCount: 256, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&q=80' },
+  { id: 'place-daley-bicentennial', name: 'Nichols Park', address: '1355 E 53rd St, Chicago, IL 60615', neighborhood: 'Hyde Park', category: 'park', rating: 4.5, reviewCount: 198, coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&q=80' },
 
   // Wicker Park
-  { id: 'place-piece-brewery', name: 'Piece Brewery & Pizzeria', address: '1927 W North Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'brewery', rating: 4.6, reviewCount: 1102, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800' },
-  { id: 'place-reckless-records', name: 'Reckless Records', address: '1532 N Milwaukee Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'record store', rating: 4.8, reviewCount: 567, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800' },
-  { id: 'place-606-trail-wp', name: 'The 606 Trail — Wicker Park Access', address: '1801 N Milwaukee Ave, Chicago, IL 60647', neighborhood: 'Wicker Park', category: 'trail', rating: 4.8, reviewCount: 2100, coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800' },
-  { id: 'place-note', name: 'The Note', address: '1565 N Milwaukee Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'bar', rating: 4.3, reviewCount: 320, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800' },
-  { id: 'place-big-star', name: 'Big Star', address: '1531 N Damen Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'restaurant', rating: 4.5, reviewCount: 1834, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800' },
-  { id: 'place-606-trail-ls', name: 'The 606 Trail — Logan Square Access', address: '2119 N Milwaukee Ave, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'trail', rating: 4.8, reviewCount: 1980, coverImage: 'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800' },
-  { id: 'place-606-trail-hp', name: 'The 606 Trail — Humboldt Park Access', address: '3628 W North Ave, Chicago, IL 60647', neighborhood: 'Humboldt Park', category: 'trail', rating: 4.7, reviewCount: 890, coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800' },
+  { id: 'place-piece-brewery', name: 'Piece Brewery & Pizzeria', address: '1927 W North Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'brewery', rating: 4.6, reviewCount: 1102, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80' },
+  { id: 'place-reckless-records', name: 'Reckless Records', address: '1532 N Milwaukee Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'record store', rating: 4.8, reviewCount: 567, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80' },
+  { id: 'place-606-trail-wp', name: 'The 606 Trail — Wicker Park Access', address: '1801 N Milwaukee Ave, Chicago, IL 60647', neighborhood: 'Wicker Park', category: 'trail', rating: 4.8, reviewCount: 2100, coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&q=80' },
+  { id: 'place-note', name: 'The Note', address: '1565 N Milwaukee Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'bar', rating: 4.3, reviewCount: 320, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80' },
+  { id: 'place-big-star', name: 'Big Star', address: '1531 N Damen Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'restaurant', rating: 4.5, reviewCount: 1834, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80' },
+  { id: 'place-606-trail-ls', name: 'The 606 Trail — Logan Square Access', address: '2119 N Milwaukee Ave, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'trail', rating: 4.8, reviewCount: 1980, coverImage: 'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800&auto=format&q=80' },
+  { id: 'place-606-trail-hp', name: 'The 606 Trail — Humboldt Park Access', address: '3628 W North Ave, Chicago, IL 60647', neighborhood: 'Humboldt Park', category: 'trail', rating: 4.7, reviewCount: 890, coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&q=80' },
 
   // Lincoln Square
-  { id: 'place-cafe-selmarie', name: 'Café Selmarie', address: '4729 N Lincoln Ave, Chicago, IL 60625', neighborhood: 'Lincoln Square', category: 'cafe', rating: 4.6, reviewCount: 788, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800' },
-  { id: 'place-ls-farmers-market', name: 'Lincoln Square Farmers Market', address: 'W Leland Ave & N Lincoln Ave, Chicago, IL 60625', neighborhood: 'Lincoln Square', category: 'market', rating: 4.8, reviewCount: 432, coverImage: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800' },
-  { id: 'place-intelligentsia-ls', name: 'Intelligentsia Coffee Lincoln Square', address: '4541 N Lincoln Ave, Chicago, IL 60625', neighborhood: 'Lincoln Square', category: 'cafe', rating: 4.7, reviewCount: 612, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800' },
-  { id: 'place-gene-siskel', name: 'Gene Siskel Film Center', address: '164 N State St, Chicago, IL 60601', neighborhood: 'Loop', category: 'cinema', rating: 4.7, reviewCount: 543, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800' },
-  { id: 'place-merz-apothecary', name: 'Merz Apothecary', address: '4716 N Lincoln Ave, Chicago, IL 60625', neighborhood: 'Lincoln Square', category: 'shop', rating: 4.8, reviewCount: 391, coverImage: 'https://images.unsplash.com/photo-1571104508999-893933ded431?w=800' },
-  { id: 'place-the-whistler', name: 'The Whistler', address: '2421 N Milwaukee Ave, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'bar', rating: 4.5, reviewCount: 627, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800' },
+  { id: 'place-cafe-selmarie', name: 'Café Selmarie', address: '4729 N Lincoln Ave, Chicago, IL 60625', neighborhood: 'Lincoln Square', category: 'cafe', rating: 4.6, reviewCount: 788, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80' },
+  { id: 'place-ls-farmers-market', name: 'Lincoln Square Farmers Market', address: 'W Leland Ave & N Lincoln Ave, Chicago, IL 60625', neighborhood: 'Lincoln Square', category: 'market', rating: 4.8, reviewCount: 432, coverImage: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&auto=format&q=80' },
+  { id: 'place-intelligentsia-ls', name: 'Intelligentsia Coffee Lincoln Square', address: '4541 N Lincoln Ave, Chicago, IL 60625', neighborhood: 'Lincoln Square', category: 'cafe', rating: 4.7, reviewCount: 612, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80' },
+  { id: 'place-gene-siskel', name: 'Gene Siskel Film Center', address: '164 N State St, Chicago, IL 60601', neighborhood: 'Loop', category: 'cinema', rating: 4.7, reviewCount: 543, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80' },
+  { id: 'place-merz-apothecary', name: 'Merz Apothecary', address: '4716 N Lincoln Ave, Chicago, IL 60625', neighborhood: 'Lincoln Square', category: 'shop', rating: 4.8, reviewCount: 391, coverImage: 'https://images.unsplash.com/photo-1571104508999-893933ded431?w=800&auto=format&q=80' },
+  { id: 'place-the-whistler', name: 'The Whistler', address: '2421 N Milwaukee Ave, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'bar', rating: 4.5, reviewCount: 627, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80' },
 
   // Pilsen
-  { id: 'place-pilsen-community-books', name: 'Pilsen Community Books', address: '1102 W 18th St, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'bookstore', rating: 4.9, reviewCount: 278, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800' },
-  { id: 'place-mana-food-bar', name: 'Mana Food Bar', address: '1742 W Division St, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'restaurant', rating: 4.5, reviewCount: 421, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800' },
-  { id: 'place-national-museum-mexican', name: 'National Museum of Mexican Art', address: '1852 W 19th St, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'museum', rating: 4.8, reviewCount: 1045, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800' },
-  { id: 'place-18th-street-bakery', name: '18th Street Bakery', address: '1830 S Carpenter St, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'bakery', rating: 4.6, reviewCount: 312, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800' },
-  { id: 'place-moody-tongue', name: 'Moody Tongue Brewing', address: '2136 S Peoria St, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'brewery', rating: 4.7, reviewCount: 534, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800' },
-  { id: 'place-efebos', name: "Efebos", address: '1651 S Blue Island Ave, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'restaurant', rating: 4.5, reviewCount: 267, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800' },
-  { id: 'place-thalia-hall', name: 'Thalia Hall', address: '1807 S Allport St, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'music venue', rating: 4.8, reviewCount: 789, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800' },
+  { id: 'place-pilsen-community-books', name: 'Pilsen Community Books', address: '1102 W 18th St, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'bookstore', rating: 4.9, reviewCount: 278, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80' },
+  { id: 'place-mana-food-bar', name: 'Mana Food Bar', address: '1742 W Division St, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'restaurant', rating: 4.5, reviewCount: 421, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80' },
+  { id: 'place-national-museum-mexican', name: 'National Museum of Mexican Art', address: '1852 W 19th St, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'museum', rating: 4.8, reviewCount: 1045, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80' },
+  { id: 'place-18th-street-bakery', name: '18th Street Bakery', address: '1830 S Carpenter St, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'bakery', rating: 4.6, reviewCount: 312, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80' },
+  { id: 'place-moody-tongue', name: 'Moody Tongue Brewing', address: '2136 S Peoria St, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'brewery', rating: 4.7, reviewCount: 534, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80' },
+  { id: 'place-efebos', name: "Efebos", address: '1651 S Blue Island Ave, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'restaurant', rating: 4.5, reviewCount: 267, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80' },
+  { id: 'place-thalia-hall', name: 'Thalia Hall', address: '1807 S Allport St, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'music venue', rating: 4.8, reviewCount: 789, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&q=80' },
 
   // Bronzeville
-  { id: 'place-dusable-museum', name: 'DuSable Black History Museum', address: '740 E 56th Pl, Chicago, IL 60637', neighborhood: 'Bronzeville', category: 'museum', rating: 4.8, reviewCount: 987, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800' },
-  { id: 'place-currency-exchange-cafe', name: 'Currency Exchange Café', address: '305 E Garfield Blvd, Chicago, IL 60615', neighborhood: 'Bronzeville', category: 'cafe', rating: 4.7, reviewCount: 445, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800' },
-  { id: 'place-harold-washington-park', name: 'Harold Washington Cultural Center', address: '4701 S Dr. Martin Luther King Jr. Dr, Chicago, IL 60615', neighborhood: 'Bronzeville', category: 'cultural center', rating: 4.6, reviewCount: 320, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800' },
-  { id: 'place-bronzeville-art', name: 'Bronzeville Art District', address: 'S Michigan Ave corridor, Chicago, IL 60616', neighborhood: 'Bronzeville', category: 'arts district', rating: 4.5, reviewCount: 198, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800' },
-  { id: 'place-jazz-bronzeville', name: 'Buddy Guy\'s Legends', address: '700 S Wabash Ave, Chicago, IL 60605', neighborhood: 'South Loop', category: 'music venue', rating: 4.7, reviewCount: 1230, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800' },
-  { id: 'place-the-spoken-word', name: 'The Spoken Word', address: '4655 S King Dr, Chicago, IL 60653', neighborhood: 'Bronzeville', category: 'bookstore', rating: 4.8, reviewCount: 167, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800' },
-  { id: 'place-ellas-corner', name: "Ella's Corner", address: '5230 S Wentworth Ave, Chicago, IL 60609', neighborhood: 'Bronzeville', category: 'restaurant', rating: 4.5, reviewCount: 289, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800' },
+  { id: 'place-dusable-museum', name: 'DuSable Black History Museum', address: '740 E 56th Pl, Chicago, IL 60637', neighborhood: 'Bronzeville', category: 'museum', rating: 4.8, reviewCount: 987, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80' },
+  { id: 'place-currency-exchange-cafe', name: 'Currency Exchange Café', address: '305 E Garfield Blvd, Chicago, IL 60615', neighborhood: 'Bronzeville', category: 'cafe', rating: 4.7, reviewCount: 445, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80' },
+  { id: 'place-harold-washington-park', name: 'Harold Washington Cultural Center', address: '4701 S Dr. Martin Luther King Jr. Dr, Chicago, IL 60615', neighborhood: 'Bronzeville', category: 'cultural center', rating: 4.6, reviewCount: 320, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80' },
+  { id: 'place-bronzeville-art', name: 'Bronzeville Art District', address: 'S Michigan Ave corridor, Chicago, IL 60616', neighborhood: 'Bronzeville', category: 'arts district', rating: 4.5, reviewCount: 198, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80' },
+  { id: 'place-jazz-bronzeville', name: 'Buddy Guy\'s Legends', address: '700 S Wabash Ave, Chicago, IL 60605', neighborhood: 'South Loop', category: 'music venue', rating: 4.7, reviewCount: 1230, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80' },
+  { id: 'place-the-spoken-word', name: 'The Spoken Word', address: '4655 S King Dr, Chicago, IL 60653', neighborhood: 'Bronzeville', category: 'bookstore', rating: 4.8, reviewCount: 167, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80' },
+  { id: 'place-ellas-corner', name: "Ella's Corner", address: '5230 S Wentworth Ave, Chicago, IL 60609', neighborhood: 'Bronzeville', category: 'restaurant', rating: 4.5, reviewCount: 289, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80' },
 
   // Logan Square
-  { id: 'place-lula-cafe', name: 'Lula Cafe', address: '2537 N Kedzie Blvd, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'restaurant', rating: 4.7, reviewCount: 1456, coverImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800' },
-  { id: 'place-volumes-bookcafe', name: 'Volumes Bookcafe', address: '2523 N Milwaukee Ave, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'bookstore cafe', rating: 4.8, reviewCount: 534, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800' },
-  { id: 'place-logan-square-farmers', name: 'Logan Square Farmers Market', address: '3107 W Logan Blvd, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'market', rating: 4.7, reviewCount: 623, coverImage: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800' },
-  { id: 'place-revolution-brewing', name: 'Revolution Brewing', address: '2323 N Milwaukee Ave, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'brewery', rating: 4.7, reviewCount: 2134, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800' },
-  { id: 'place-lost-larson', name: 'Lost Larson', address: '5318 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'bakery', rating: 4.9, reviewCount: 489, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800' },
-  { id: 'place-scofflaw', name: 'Scofflaw', address: '3201 W Armitage Ave, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'bar', rating: 4.5, reviewCount: 678, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800' },
-  { id: 'place-california-clipper', name: 'California Clipper', address: '1002 N California Ave, Chicago, IL 60622', neighborhood: 'Humboldt Park', category: 'bar', rating: 4.6, reviewCount: 412, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800' },
+  { id: 'place-lula-cafe', name: 'Lula Cafe', address: '2537 N Kedzie Blvd, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'restaurant', rating: 4.7, reviewCount: 1456, coverImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&q=80' },
+  { id: 'place-volumes-bookcafe', name: 'Volumes Bookcafe', address: '2523 N Milwaukee Ave, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'bookstore cafe', rating: 4.8, reviewCount: 534, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80' },
+  { id: 'place-logan-square-farmers', name: 'Logan Square Farmers Market', address: '3107 W Logan Blvd, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'market', rating: 4.7, reviewCount: 623, coverImage: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&auto=format&q=80' },
+  { id: 'place-revolution-brewing', name: 'Revolution Brewing', address: '2323 N Milwaukee Ave, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'brewery', rating: 4.7, reviewCount: 2134, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80' },
+  { id: 'place-lost-larson', name: 'Lost Larson', address: '5318 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'bakery', rating: 4.9, reviewCount: 489, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80' },
+  { id: 'place-scofflaw', name: 'Scofflaw', address: '3201 W Armitage Ave, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'bar', rating: 4.5, reviewCount: 678, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80' },
+  { id: 'place-california-clipper', name: 'California Clipper', address: '1002 N California Ave, Chicago, IL 60622', neighborhood: 'Humboldt Park', category: 'bar', rating: 4.6, reviewCount: 412, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80' },
 
   // Andersonville
-  { id: 'place-kopi-cafe', name: 'Kopi: A Traveler\'s Cafe', address: '5317 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'cafe', rating: 4.7, reviewCount: 543, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800' },
-  { id: 'place-women-written', name: 'Women & Children First', address: '5233 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'bookstore', rating: 4.9, reviewCount: 412, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800' },
-  { id: 'place-hamburger-mary', name: "Hamburger Mary's", address: '5400 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'restaurant', rating: 4.5, reviewCount: 789, coverImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800' },
-  { id: 'place-andersonville-farmers', name: 'Andersonville Farmers Market', address: '5200 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'market', rating: 4.7, reviewCount: 287, coverImage: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800' },
-  { id: 'place-hopleaf', name: 'Hopleaf Bar', address: '5148 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'bar', rating: 4.7, reviewCount: 1234, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800' },
-  { id: 'place-simon-tavern', name: "Simon's Tavern", address: '5210 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'bar', rating: 4.6, reviewCount: 456, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800' },
-  { id: 'place-andersonvilles-swedish', name: 'Svea Restaurant', address: '5236 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'restaurant', rating: 4.5, reviewCount: 312, coverImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800' },
+  { id: 'place-kopi-cafe', name: 'Kopi: A Traveler\'s Cafe', address: '5317 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'cafe', rating: 4.7, reviewCount: 543, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80' },
+  { id: 'place-women-written', name: 'Women & Children First', address: '5233 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'bookstore', rating: 4.9, reviewCount: 412, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80' },
+  { id: 'place-hamburger-mary', name: "Hamburger Mary's", address: '5400 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'restaurant', rating: 4.5, reviewCount: 789, coverImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&q=80' },
+  { id: 'place-andersonville-farmers', name: 'Andersonville Farmers Market', address: '5200 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'market', rating: 4.7, reviewCount: 287, coverImage: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&auto=format&q=80' },
+  { id: 'place-hopleaf', name: 'Hopleaf Bar', address: '5148 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'bar', rating: 4.7, reviewCount: 1234, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80' },
+  { id: 'place-simon-tavern', name: "Simon's Tavern", address: '5210 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'bar', rating: 4.6, reviewCount: 456, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80' },
+  { id: 'place-andersonvilles-swedish', name: 'Svea Restaurant', address: '5236 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'restaurant', rating: 4.5, reviewCount: 312, coverImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&q=80' },
 
   // Additional places for variety
-  { id: 'place-smart-bar', name: 'Smart Bar', address: '3730 N Clark St, Chicago, IL 60613', neighborhood: 'Lakeview', category: 'music venue', rating: 4.7, reviewCount: 876, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800' },
-  { id: 'place-schubas', name: 'Schubas Tavern', address: '3159 N Southport Ave, Chicago, IL 60657', neighborhood: 'Lakeview', category: 'music venue', rating: 4.7, reviewCount: 1023, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800' },
-  { id: 'place-empty-bottle', name: 'Empty Bottle', address: '1035 N Western Ave, Chicago, IL 60622', neighborhood: 'Ukrainian Village', category: 'music venue', rating: 4.8, reviewCount: 756, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800' },
-  { id: 'place-millennium-park', name: 'Millennium Park', address: '201 E Randolph St, Chicago, IL 60602', neighborhood: 'Loop', category: 'park', rating: 4.9, reviewCount: 15234, coverImage: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800' },
-  { id: 'place-dill-pickle-food-coop', name: 'Dill Pickle Food Co-op', address: '3039 W Fullerton Ave, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'grocery', rating: 4.7, reviewCount: 312, coverImage: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800' },
-  { id: 'place-hyde-park-art-center', name: 'Hyde Park Art Center', address: '5020 S Cornell Ave, Chicago, IL 60615', neighborhood: 'Hyde Park', category: 'gallery', rating: 4.7, reviewCount: 234, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800' },
-  { id: 'place-bookends-beginnings', name: 'Bookends & Beginnings', address: '1712 Sherman Ave, Evanston, IL 60201', neighborhood: 'Evanston', category: 'bookstore', rating: 4.9, reviewCount: 367, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800' },
-  { id: 'place-the-vintage-lounge', name: 'The Vintage Lounge', address: '1449 W Taylor St, Chicago, IL 60607', neighborhood: 'Little Italy', category: 'bar', rating: 4.4, reviewCount: 198, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800' },
-  { id: 'place-maria-felix', name: "Maria's Packaged Goods & Community Bar", address: '960 W 31st St, Chicago, IL 60608', neighborhood: 'Bridgeport', category: 'bar', rating: 4.8, reviewCount: 678, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800' },
-  { id: 'place-new-era-caps', name: 'New Era / Mitchell & Ness', address: '32 S State St, Chicago, IL 60603', neighborhood: 'Loop', category: 'shop', rating: 4.2, reviewCount: 134, coverImage: 'https://images.unsplash.com/photo-1571104508999-893933ded431?w=800' },
-  { id: 'place-wicker-park-record-swap', name: 'Shuga Records', address: '1272 N Milwaukee Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'record store', rating: 4.7, reviewCount: 234, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800' },
-  { id: 'place-dusty-groove', name: 'Dusty Groove', address: '1120 N Ashland Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'record store', rating: 4.8, reviewCount: 456, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800' },
-  { id: 'place-wicker-park-plaza', name: 'Wicker Park Fest Stage', address: '1425 N Damen Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'event venue', rating: 4.5, reviewCount: 345, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800' },
-  { id: 'place-logan-square-auditorium', name: 'Logan Square Auditorium', address: '2539 N Kedzie Blvd, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'music venue', rating: 4.6, reviewCount: 567, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800' },
-  { id: 'place-intelligentsia-broadway', name: 'Intelligentsia Coffee Broadway', address: '3123 N Broadway, Chicago, IL 60657', neighborhood: 'Lakeview', category: 'cafe', rating: 4.7, reviewCount: 432, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800' },
-  { id: 'place-old-town-school', name: 'Old Town School of Folk Music', address: '4544 N Lincoln Ave, Chicago, IL 60625', neighborhood: 'Lincoln Square', category: 'music venue', rating: 4.8, reviewCount: 987, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800' },
-  { id: 'place-south-side-barbecue', name: "Lem's Bar-B-Q", address: '311 E 75th St, Chicago, IL 60619', neighborhood: 'Greater Grand Crossing', category: 'restaurant', rating: 4.8, reviewCount: 523, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800' },
-  { id: 'place-harold-restaurant', name: "Harold's Chicken Shack", address: '4859 S Cottage Grove Ave, Chicago, IL 60615', neighborhood: 'Bronzeville', category: 'restaurant', rating: 4.6, reviewCount: 678, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800' },
-  { id: 'place-shake-smart-hp', name: 'Harper Court', address: '5235 S Harper Ave, Chicago, IL 60615', neighborhood: 'Hyde Park', category: 'shopping center', rating: 4.3, reviewCount: 156, coverImage: 'https://images.unsplash.com/photo-1571104508999-893933ded431?w=800' },
-  { id: 'place-andys-jazz', name: "Andy's Jazz Club", address: '11 E Hubbard St, Chicago, IL 60611', neighborhood: 'River North', category: 'jazz club', rating: 4.6, reviewCount: 789, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800' },
-  { id: 'place-green-mill', name: 'Green Mill Jazz Club', address: '4802 N Broadway, Chicago, IL 60640', neighborhood: 'Uptown', category: 'jazz club', rating: 4.8, reviewCount: 1345, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800' },
-  { id: 'place-pilsen-ymca', name: 'Pilsen YMCA', address: '1608 W 21st Pl, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'community center', rating: 4.3, reviewCount: 156, coverImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800' },
-  { id: 'place-bronzeville-walk-fame', name: 'Bronzeville Walk of Fame', address: 'Dr. Martin Luther King Jr. Dr, Chicago, IL 60616', neighborhood: 'Bronzeville', category: 'landmark', rating: 4.5, reviewCount: 134, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800' },
-  { id: 'place-nichols-park', name: 'Nichols Park', address: '1355 E 53rd St, Chicago, IL 60615', neighborhood: 'Hyde Park', category: 'park', rating: 4.6, reviewCount: 267, coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800' },
-  { id: 'place-humboldt-fieldhouse', name: 'Humboldt Park Fieldhouse', address: '1301 N Sacramento Ave, Chicago, IL 60622', neighborhood: 'Humboldt Park', category: 'community center', rating: 4.4, reviewCount: 189, coverImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800' },
-  { id: 'place-andersonville-wine', name: 'Andersonville Wine & Spirits', address: '5480 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'wine shop', rating: 4.6, reviewCount: 213, coverImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800' },
-  { id: 'place-ls-boulevard', name: 'Logan Boulevard', address: 'W Logan Blvd, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'park', rating: 4.7, reviewCount: 456, coverImage: 'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800' },
+  { id: 'place-smart-bar', name: 'Smart Bar', address: '3730 N Clark St, Chicago, IL 60613', neighborhood: 'Lakeview', category: 'music venue', rating: 4.7, reviewCount: 876, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&q=80' },
+  { id: 'place-schubas', name: 'Schubas Tavern', address: '3159 N Southport Ave, Chicago, IL 60657', neighborhood: 'Lakeview', category: 'music venue', rating: 4.7, reviewCount: 1023, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80' },
+  { id: 'place-empty-bottle', name: 'Empty Bottle', address: '1035 N Western Ave, Chicago, IL 60622', neighborhood: 'Ukrainian Village', category: 'music venue', rating: 4.8, reviewCount: 756, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&q=80' },
+  { id: 'place-millennium-park', name: 'Millennium Park', address: '201 E Randolph St, Chicago, IL 60602', neighborhood: 'Loop', category: 'park', rating: 4.9, reviewCount: 15234, coverImage: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&auto=format&q=80' },
+  { id: 'place-dill-pickle-food-coop', name: 'Dill Pickle Food Co-op', address: '3039 W Fullerton Ave, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'grocery', rating: 4.7, reviewCount: 312, coverImage: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&auto=format&q=80' },
+  { id: 'place-hyde-park-art-center', name: 'Hyde Park Art Center', address: '5020 S Cornell Ave, Chicago, IL 60615', neighborhood: 'Hyde Park', category: 'gallery', rating: 4.7, reviewCount: 234, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80' },
+  { id: 'place-bookends-beginnings', name: 'Bookends & Beginnings', address: '1712 Sherman Ave, Evanston, IL 60201', neighborhood: 'Evanston', category: 'bookstore', rating: 4.9, reviewCount: 367, coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80' },
+  { id: 'place-the-vintage-lounge', name: 'The Vintage Lounge', address: '1449 W Taylor St, Chicago, IL 60607', neighborhood: 'Little Italy', category: 'bar', rating: 4.4, reviewCount: 198, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80' },
+  { id: 'place-maria-felix', name: "Maria's Packaged Goods & Community Bar", address: '960 W 31st St, Chicago, IL 60608', neighborhood: 'Bridgeport', category: 'bar', rating: 4.8, reviewCount: 678, coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80' },
+  { id: 'place-new-era-caps', name: 'New Era / Mitchell & Ness', address: '32 S State St, Chicago, IL 60603', neighborhood: 'Loop', category: 'shop', rating: 4.2, reviewCount: 134, coverImage: 'https://images.unsplash.com/photo-1571104508999-893933ded431?w=800&auto=format&q=80' },
+  { id: 'place-wicker-park-record-swap', name: 'Shuga Records', address: '1272 N Milwaukee Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'record store', rating: 4.7, reviewCount: 234, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80' },
+  { id: 'place-dusty-groove', name: 'Dusty Groove', address: '1120 N Ashland Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'record store', rating: 4.8, reviewCount: 456, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80' },
+  { id: 'place-wicker-park-plaza', name: 'Wicker Park Fest Stage', address: '1425 N Damen Ave, Chicago, IL 60622', neighborhood: 'Wicker Park', category: 'event venue', rating: 4.5, reviewCount: 345, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&q=80' },
+  { id: 'place-logan-square-auditorium', name: 'Logan Square Auditorium', address: '2539 N Kedzie Blvd, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'music venue', rating: 4.6, reviewCount: 567, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&q=80' },
+  { id: 'place-intelligentsia-broadway', name: 'Intelligentsia Coffee Broadway', address: '3123 N Broadway, Chicago, IL 60657', neighborhood: 'Lakeview', category: 'cafe', rating: 4.7, reviewCount: 432, coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80' },
+  { id: 'place-old-town-school', name: 'Old Town School of Folk Music', address: '4544 N Lincoln Ave, Chicago, IL 60625', neighborhood: 'Lincoln Square', category: 'music venue', rating: 4.8, reviewCount: 987, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80' },
+  { id: 'place-south-side-barbecue', name: "Lem's Bar-B-Q", address: '311 E 75th St, Chicago, IL 60619', neighborhood: 'Greater Grand Crossing', category: 'restaurant', rating: 4.8, reviewCount: 523, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80' },
+  { id: 'place-harold-restaurant', name: "Harold's Chicken Shack", address: '4859 S Cottage Grove Ave, Chicago, IL 60615', neighborhood: 'Bronzeville', category: 'restaurant', rating: 4.6, reviewCount: 678, coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80' },
+  { id: 'place-shake-smart-hp', name: 'Harper Court', address: '5235 S Harper Ave, Chicago, IL 60615', neighborhood: 'Hyde Park', category: 'shopping center', rating: 4.3, reviewCount: 156, coverImage: 'https://images.unsplash.com/photo-1571104508999-893933ded431?w=800&auto=format&q=80' },
+  { id: 'place-andys-jazz', name: "Andy's Jazz Club", address: '11 E Hubbard St, Chicago, IL 60611', neighborhood: 'River North', category: 'jazz club', rating: 4.6, reviewCount: 789, coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80' },
+  { id: 'place-green-mill', name: 'Green Mill Jazz Club', address: '4802 N Broadway, Chicago, IL 60640', neighborhood: 'Uptown', category: 'jazz club', rating: 4.8, reviewCount: 1345, coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&q=80' },
+  { id: 'place-pilsen-ymca', name: 'Pilsen YMCA', address: '1608 W 21st Pl, Chicago, IL 60608', neighborhood: 'Pilsen', category: 'community center', rating: 4.3, reviewCount: 156, coverImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&q=80' },
+  { id: 'place-bronzeville-walk-fame', name: 'Bronzeville Walk of Fame', address: 'Dr. Martin Luther King Jr. Dr, Chicago, IL 60616', neighborhood: 'Bronzeville', category: 'landmark', rating: 4.5, reviewCount: 134, coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80' },
+  { id: 'place-nichols-park', name: 'Nichols Park', address: '1355 E 53rd St, Chicago, IL 60615', neighborhood: 'Hyde Park', category: 'park', rating: 4.6, reviewCount: 267, coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&q=80' },
+  { id: 'place-humboldt-fieldhouse', name: 'Humboldt Park Fieldhouse', address: '1301 N Sacramento Ave, Chicago, IL 60622', neighborhood: 'Humboldt Park', category: 'community center', rating: 4.4, reviewCount: 189, coverImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&q=80' },
+  { id: 'place-andersonville-wine', name: 'Andersonville Wine & Spirits', address: '5480 N Clark St, Chicago, IL 60640', neighborhood: 'Andersonville', category: 'wine shop', rating: 4.6, reviewCount: 213, coverImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&q=80' },
+  { id: 'place-ls-boulevard', name: 'Logan Boulevard', address: 'W Logan Blvd, Chicago, IL 60647', neighborhood: 'Logan Square', category: 'park', rating: 4.7, reviewCount: 456, coverImage: 'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800&auto=format&q=80' },
 ]
 
 // ---------------------------------------------------------------------------
@@ -369,7 +369,7 @@ export const SEED_GUIDES = [
         rating: 4.7,
         reviewCount: 312,
         editorNote: "The cortado here is non-negotiable. Get there before 9am on weekends or you'll wait.",
-        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80',
       },
       {
         type: 'product',
@@ -377,7 +377,7 @@ export const SEED_GUIDES = [
         description: 'Double shot of their house espresso blend with a splash of oat milk. Perfect balance.',
         price: '$4.50',
         where: 'Café Colao',
-        coverImage: 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=800&auto=format&q=80',
         isMemberDeal: true,
         dealDescription: 'Free pastry with CPM membership on weekends',
       },
@@ -391,13 +391,13 @@ export const SEED_GUIDES = [
         rating: 4.8,
         reviewCount: 890,
         editorNote: 'Find the hammocks near the lagoon. The morning light through the trees is worth the walk in.',
-        coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&q=80',
       },
       {
         type: 'post',
         body: "How to find the perfect hammock spot in Humboldt Park Natural Area:\n\nFrom the Sacramento entrance, walk north along the lagoon path for about 8 minutes. You'll pass the boat launch on your left. Keep going until you see the cluster of old oaks just past the footbridge — that's your spot.\n\nThe canopy here is dense enough to block direct sun but still lets in the breeze off the water. The ground is flat and the anchor trees are about 15 feet apart, which is ideal for a standard hammock.\n\nBring bug spray in June and July. A tarp is useful but not essential. Go on a Tuesday morning and you may have the whole clearing to yourself.\n\nThere is no bad time of year for this, including winter if you have the right sleeping bag. The park looks completely different with snow on the ground.",
         images: [
-          'https://images.unsplash.com/photo-1477415348463-c0eb7f1359b6?w=800',
+          'https://images.unsplash.com/photo-1477415348463-c0eb7f1359b6?w=800&auto=format&q=80',
         ],
         isLong: true,
       },
@@ -419,10 +419,10 @@ export const SEED_GUIDES = [
         rating: 4.5,
         reviewCount: 187,
         editorNote: "The natural wine list changes weekly and the staff actually know what they're talking about. Order the charcuterie.",
-        coverImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&q=80',
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: true,
     isReviewed: true,
@@ -456,7 +456,7 @@ export const SEED_GUIDES = [
         rating: 4.7,
         reviewCount: 412,
         editorNote: 'Check their website for jazz nights specifically — not every night. The sound system is excellent.',
-        coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -468,7 +468,7 @@ export const SEED_GUIDES = [
         rating: 4.4,
         reviewCount: 701,
         editorNote: 'Go early for dinner before the show. The brick oven pizza is worth it.',
-        coverImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&q=80',
       },
       {
         type: 'event',
@@ -479,7 +479,7 @@ export const SEED_GUIDES = [
         time: 'All day',
         url: 'https://hydeparkjazzfestival.org',
         editorNote: "The longest-running free jazz festival in Chicago. I've been every year for the past decade.",
-        coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&q=80',
       },
       {
         type: 'playlist',
@@ -491,7 +491,7 @@ export const SEED_GUIDES = [
         editorNote: 'Put this on during the walk back from The Promontory.',
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: true,
@@ -525,7 +525,7 @@ export const SEED_GUIDES = [
         rating: 4.8,
         reviewCount: 2100,
         editorNote: "The Damen entrance is the busiest but also the most convenient from the Blue Line. Don't start here on a Saturday — use the Ridgeway entrance instead.",
-        coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -537,7 +537,7 @@ export const SEED_GUIDES = [
         rating: 4.8,
         reviewCount: 1980,
         editorNote: 'The western end. Quieter, better light in the morning. Great if you want the whole trail to yourself.',
-        coverImage: 'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -549,7 +549,7 @@ export const SEED_GUIDES = [
         rating: 4.7,
         reviewCount: 890,
         editorNote: "The part of the trail most Wicker Park people skip. The views over Humboldt Park from the elevated section are the best on the whole trail — Alex added this one.",
-        coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&q=80',
       },
       {
         type: 'post',
@@ -566,7 +566,7 @@ export const SEED_GUIDES = [
         editorNote: "Worth reading before you walk it. The context changes how you see the neighborhoods you're passing through.",
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: false,
@@ -600,7 +600,7 @@ export const SEED_GUIDES = [
         rating: 4.6,
         reviewCount: 788,
         editorNote: 'The almond croissants sell out by 9am. I cannot be held responsible for your disappointment if you show up at 10.',
-        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80',
       },
       {
         type: 'product',
@@ -608,7 +608,7 @@ export const SEED_GUIDES = [
         description: 'Properly frangipane-filled, not just dusted with almonds on top. One of the best in the city.',
         price: '$4.75',
         where: 'Café Selmarie',
-        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80',
         isMemberDeal: false,
       },
       {
@@ -618,7 +618,7 @@ export const SEED_GUIDES = [
         editorNote: "This is just what works for me. Adjust for your own pace.",
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: true,
     isReviewed: false,
@@ -652,7 +652,7 @@ export const SEED_GUIDES = [
         rating: 4.8,
         reviewCount: 1045,
         editorNote: 'Always free. The permanent collection alone is worth an hour. Check the current exhibition before you go.',
-        coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -664,7 +664,7 @@ export const SEED_GUIDES = [
         rating: 4.8,
         reviewCount: 789,
         editorNote: "The building itself is art — restored 1892 opera house. Even if there's no show, the bar downstairs (Dusek's) is worth stopping into.",
-        coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -676,7 +676,7 @@ export const SEED_GUIDES = [
         rating: 4.9,
         reviewCount: 278,
         editorNote: "Part community center, part archive, part hangout. Rotating art on the walls and a reading series that's worth showing up for.",
-        coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80',
       },
       {
         type: 'article',
@@ -693,7 +693,7 @@ export const SEED_GUIDES = [
         isLong: false,
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: false,
@@ -727,7 +727,7 @@ export const SEED_GUIDES = [
         rating: 4.8,
         reviewCount: 987,
         editorNote: "Start here. Everything else in the neighborhood makes more sense after you've spent an hour with the history.",
-        coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -739,7 +739,7 @@ export const SEED_GUIDES = [
         rating: 4.7,
         reviewCount: 445,
         editorNote: "Named for what used to be in this storefront. The owner knows the history of every block on Garfield. Ask him about it.",
-        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -751,7 +751,7 @@ export const SEED_GUIDES = [
         rating: 4.6,
         reviewCount: 320,
         editorNote: 'The theater here does some of the most adventurous programming in the city. The building is a neighborhood landmark.',
-        coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80',
       },
       {
         type: 'post',
@@ -768,7 +768,7 @@ export const SEED_GUIDES = [
         editorNote: "This is the on-the-ground version of what the DuSable history makes abstract.",
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: true,
@@ -803,7 +803,7 @@ export const SEED_GUIDES = [
         rating: 4.6,
         reviewCount: 1204,
         editorNote: "A 1915 ballroom that books everything from indie rock to cumbia nights to roller derby. The room has a presence that newer venues can't manufacture.",
-        coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -815,7 +815,7 @@ export const SEED_GUIDES = [
         rating: 4.5,
         reviewCount: 627,
         editorNote: "Every night is a different thing here — free jazz, a DJ set, a record release. No cover most nights. The cocktail list is short and excellent.",
-        coverImage: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&auto=format&q=80',
       },
       {
         type: 'playlist',
@@ -834,10 +834,10 @@ export const SEED_GUIDES = [
         time: '12:00 PM – 10:00 PM',
         url: 'https://logansquareartsfest.com',
         editorNote: "Eight blocks of outdoor stages, free admission. The best free music in Chicago that isn't on the lakefront.",
-        coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format&q=80',
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: true,
@@ -872,7 +872,7 @@ export const SEED_GUIDES = [
         rating: 4.7,
         reviewCount: 543,
         editorNote: "The vibe here is impossible to manufacture. Mismatched furniture, travel books everywhere, regulars who've been coming since 1992. Get the chai.",
-        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -884,7 +884,7 @@ export const SEED_GUIDES = [
         rating: 4.9,
         reviewCount: 489,
         editorNote: 'Swedish pastry tradition done with Chicago ingredients. The cardamom bun is the one. Get there early.',
-        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -896,7 +896,7 @@ export const SEED_GUIDES = [
         rating: 4.9,
         reviewCount: 412,
         editorNote: "A feminist bookstore that's been here since 1979. The staff recommendations are never wrong. Budget extra time.",
-        coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80',
       },
       {
         type: 'product',
@@ -905,10 +905,10 @@ export const SEED_GUIDES = [
         price: '$5.25',
         where: 'Lost Larson',
         isMemberDeal: false,
-        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80',
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: true,
@@ -938,7 +938,7 @@ export const SEED_GUIDES = [
         description: "Intelligentsia's signature espresso blend. Chocolatey, balanced, made for milk-based drinks.",
         price: '$4.00',
         where: 'Intelligentsia Coffee Lincoln Square',
-        coverImage: 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=800&auto=format&q=80',
         isMemberDeal: true,
         dealDescription: '20% off all espresso drinks with CPM membership',
       },
@@ -961,7 +961,7 @@ export const SEED_GUIDES = [
         rating: 4.7,
         reviewCount: 612,
         editorNote: 'The bar seating faces the street. Great for watching Lincoln Ave on a Saturday morning.',
-        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80',
       },
       {
         type: 'post',
@@ -969,7 +969,7 @@ export const SEED_GUIDES = [
         isLong: false,
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: false,
@@ -1002,7 +1002,7 @@ export const SEED_GUIDES = [
         where: 'Volumes Bookcafe',
         isMemberDeal: true,
         dealDescription: '15% off staff pick bundle with CPM membership',
-        coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -1014,7 +1014,7 @@ export const SEED_GUIDES = [
         rating: 4.8,
         reviewCount: 534,
         editorNote: "They serve Intelligentsia coffee. The front tables are the best seats for people-watching on Milwaukee.",
-        coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80',
       },
       {
         type: 'article',
@@ -1035,7 +1035,7 @@ export const SEED_GUIDES = [
         editorNote: 'Free events. The readings skew independent and local. Always worth it.',
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: false,
@@ -1071,7 +1071,7 @@ export const SEED_GUIDES = [
         rating: 4.7,
         reviewCount: 312,
         editorNote: "Starting here as Alex suggested. No notes — the cortado is excellent.",
-        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -1083,7 +1083,7 @@ export const SEED_GUIDES = [
         rating: 4.6,
         reviewCount: 540,
         editorNote: "I went to the lagoon side instead of the natural area. Bring a book.",
-        coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&q=80',
       },
       {
         type: 'playlist',
@@ -1098,7 +1098,7 @@ export const SEED_GUIDES = [
         isLong: false,
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: false,
@@ -1133,7 +1133,7 @@ export const SEED_GUIDES = [
         rating: 4.8,
         reviewCount: 1045,
         editorNote: 'Always free. I spent longer here than I expected.',
-        coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -1145,7 +1145,7 @@ export const SEED_GUIDES = [
         rating: 4.7,
         reviewCount: 534,
         editorNote: 'A better lunch stop than Maria suggests. The food program here is serious.',
-        coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80',
       },
       {
         type: 'event',
@@ -1155,7 +1155,7 @@ export const SEED_GUIDES = [
         date: 'Second Friday of every month',
         time: '6:00 PM – 10:00 PM',
         editorNote: 'The galleries open late and the street comes alive. Worth timing a visit around this.',
-        coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80',
       },
       {
         type: 'post',
@@ -1163,7 +1163,7 @@ export const SEED_GUIDES = [
         isLong: false,
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: false,
@@ -1198,7 +1198,7 @@ export const SEED_GUIDES = [
         rating: 4.7,
         reviewCount: 445,
         editorNote: "I came here knowing nothing about Bronzeville. I left with a reading list and a standing coffee order.",
-        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -1210,7 +1210,7 @@ export const SEED_GUIDES = [
         rating: 4.6,
         reviewCount: 678,
         editorNote: 'A South Side institution. Order with mild sauce. No debate.',
-        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80',
       },
       {
         type: 'article',
@@ -1221,7 +1221,7 @@ export const SEED_GUIDES = [
         summary: 'A counterpoint to the usual "rising neighborhood" framing — what longtime residents actually think about how their neighborhood is being covered.',
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: false,
@@ -1255,7 +1255,7 @@ export const SEED_GUIDES = [
         rating: 4.9,
         reviewCount: 389,
         editorNote: "The best basement bookstore in any American city. The used fiction section alone is worth the trip from anywhere in Chicago.",
-        coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -1267,7 +1267,7 @@ export const SEED_GUIDES = [
         rating: 4.7,
         reviewCount: 3200,
         editorNote: "Saturday afternoons here feel like a city-wide tradition. The U-505 submarine exhibit alone is worth the admission.",
-        coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&auto=format&q=80',
       },
       {
         type: 'post',
@@ -1283,7 +1283,7 @@ export const SEED_GUIDES = [
         summary: "How 57th Street Books, Powell's, Seminary Co-op, and a handful of used booksellers have maintained a literary micro-economy in one neighborhood.",
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: false,
@@ -1317,7 +1317,7 @@ export const SEED_GUIDES = [
         rating: 4.5,
         reviewCount: 834,
         editorNote: "Cash only. No menus. You pick from what's in the steam trays. It's been this way since 1921 and long may it continue.",
-        coverImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -1329,7 +1329,7 @@ export const SEED_GUIDES = [
         rating: 4.8,
         reviewCount: 523,
         editorNote: 'Cash only, cash only, cash only. Aquemini is the move. Open late on weekends.',
-        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -1341,7 +1341,7 @@ export const SEED_GUIDES = [
         rating: 4.6,
         reviewCount: 678,
         editorNote: 'Mild sauce. The slaw. The white bread. In that order.',
-        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80',
       },
       {
         type: 'product',
@@ -1361,10 +1361,10 @@ export const SEED_GUIDES = [
         rating: 4.5,
         reviewCount: 289,
         editorNote: "Sunday brunch only. Get there at opening. The catfish and eggs is a religious experience.",
-        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80',
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: false,
@@ -1398,7 +1398,7 @@ export const SEED_GUIDES = [
         rating: 4.8,
         reviewCount: 567,
         editorNote: "Start here at opening. The RSD-exclusive bin goes fast. Staff are grumpy and correct about everything.",
-        coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -1410,7 +1410,7 @@ export const SEED_GUIDES = [
         rating: 4.8,
         reviewCount: 456,
         editorNote: 'Jazz and soul specialists. The best used jazz section I have ever seen in a physical store. Period.',
-        coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80',
       },
       {
         type: 'product',
@@ -1434,13 +1434,13 @@ export const SEED_GUIDES = [
         type: 'playlist',
         platform: 'spotify',
         // Whitney — Light Upon the Lake (Chicago band)
-        embedUrl: 'https://open.spotify.com/embed/album/4iUZGbhZSFaMimKBFcDyBX',
+        embedUrl: 'https://open.spotify.com/embed/album/3UhUTuYtGypQWuhqqoImsv',
         title: 'Whitney — Light Upon the Lake',
         description: "The right thing to listen to while digging through crates in Wicker Park.",
         editorNote: "Whitney is a Chicago band. This album is from 2016 and still sounds like nothing else.",
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: true,
     isReviewed: false,
@@ -1474,7 +1474,7 @@ export const SEED_GUIDES = [
         rating: 4.6,
         reviewCount: 456,
         editorNote: "This is technically a bar but opens at 11am on Sundays and has the best glögg in the city in winter. The Swedish meatball brunch is real and it is perfect.",
-        coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80',
       },
       {
         type: 'place',
@@ -1486,7 +1486,7 @@ export const SEED_GUIDES = [
         rating: 4.9,
         reviewCount: 412,
         editorNote: "The Sunday morning energy here is completely different from a weekday. Take your time.",
-        coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&q=80',
       },
       {
         type: 'product',
@@ -1495,7 +1495,7 @@ export const SEED_GUIDES = [
         price: '$8.00',
         where: "Simon's Tavern",
         isMemberDeal: false,
-        coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800',
+        coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&q=80',
       },
       {
         type: 'post',
@@ -1503,7 +1503,7 @@ export const SEED_GUIDES = [
         isLong: true,
       },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?w=800',
+    coverImage: 'https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?w=800&auto=format&q=80',
     privacy: 'public',
     isEditorsPick: false,
     isReviewed: true,

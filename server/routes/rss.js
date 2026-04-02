@@ -3,6 +3,10 @@ import { XMLParser } from 'fast-xml-parser'
 
 const router = Router()
 
+const CACHE_TTL = 5 * 60 * 1000 // 5 minutes
+let cache = null
+let cacheTime = 0
+
 const FEED_URLS = {
   suntimes: 'https://chicago.suntimes.com/rss/index.xml',
   wbez: 'https://www.wbez.org/rss/index.xml',
@@ -46,6 +50,11 @@ async function fetchFeed(source) {
 router.get('/', async (req, res) => {
   const source = req.query.source
 
+  // Return cached response if within TTL (source-specific requests bypass cache)
+  if (!source && cache && Date.now() - cacheTime < CACHE_TTL) {
+    return res.json(cache)
+  }
+
   try {
     if (source === 'suntimes' || source === 'wbez') {
       const articles = await fetchFeed(source)
@@ -59,6 +68,8 @@ router.get('/', async (req, res) => {
     ])
 
     const articles = results.flatMap((r) => (r.status === 'fulfilled' ? r.value : []))
+    cache = articles
+    cacheTime = Date.now()
     return res.json(articles)
   } catch {
     // On any error return empty array — feed renders guides only

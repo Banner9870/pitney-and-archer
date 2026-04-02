@@ -1515,6 +1515,109 @@ Each place should have: `id`, `name`, `address`, `neighborhood`, `category`, `ra
 
 ---
 
+### Phase 9a: Performance Pass
+
+**Goal:** Eliminate the two observed performance bottlenecks from Phase 9 testing — slow RSS responses and slow image loads.
+
+**Context:** During Phase 9 user testing, two issues were observed: (1) `/api/rss` responses taking 500ms+ on every page load, and (2) cover images loading slowly. Both are fixable without architectural changes.
+
+**Files to modify:**
+- `server/routes/rss.js` — add in-memory TTL cache
+- `client/src/data/seed.js` — add WebP/quality params to all Unsplash URLs
+- `client/src/pages/GuideDetailPage/GuideDetailPage.jsx` — add `fetchpriority` hint to hero image
+
+**Tasks:**
+
+1. **RSS server-side cache** (`server/routes/rss.js`):
+   - Add a module-level `cache` variable (initially `null`) and `cacheTime` timestamp.
+   - TTL: 5 minutes (`5 * 60 * 1000` ms).
+   - At the top of the `GET /` handler: if `cache` is non-null and `Date.now() - cacheTime < CACHE_TTL`, return `res.json(cache)` immediately.
+   - After a successful fetch: set `cache = articles` and `cacheTime = Date.now()`.
+   - On error (both feeds fail): do not cache — fall through to `return res.json([])` as before.
+   - **Result:** warm hits return in <5ms; cold hits (first load or after TTL expires) remain network-bound.
+
+2. **Unsplash WebP delivery** (`client/src/data/seed.js`):
+   - Replace all occurrences of `?w=800` with `?w=800&auto=format&q=80` (global find-replace across the file).
+   - This applies to: `COVER_PHOTOS` array and all `coverImage` fields in `SEED_PLACES` and `SEED_GUIDES`.
+   - `auto=format` instructs Unsplash's CDN to serve WebP to supporting browsers (all modern browsers); `q=80` reduces file size ~25–35% vs. default quality.
+   - Do not change image dimensions.
+
+3. **Hero image fetch priority** (`client/src/pages/GuideDetailPage/GuideDetailPage.jsx`):
+   - Add `fetchpriority="high"` to the hero `<img>` tag (the cover image at the top of the guide detail page).
+   - This marks the image as the LCP candidate and moves it ahead of other network requests in the browser's fetch queue.
+   - No other `<img>` tags should receive `fetchpriority="high"` — only the above-the-fold hero.
+
+**Smoke test:**
+1. Open DevTools → Network tab → disable cache → hard reload `/guide/guide-001`. Confirm the hero image starts loading before other images.
+2. Reload the page twice. On the second reload, `/api/rss` should return in <20ms (visible in Network tab as coming from the server cache).
+3. Compare image file sizes before/after: Unsplash URLs with `auto=format` serve WebP in Chrome/Firefox — visible in the Network tab `Type` column.
+
+**Dependencies:** Phase 9 complete.
+
+---
+
+### Phase 10: Guide Detail Visual Cleanup
+
+**Goal:** Reduce visual busyness on the guide detail page. Module cards feel calmer and more differentiated from each other. No functional changes — CSS and layout only.
+
+**Background:** The guide detail page currently feels cluttered due to: uniform bordered boxes on every module, unpredictable color usage across module types, too many badge shapes, backgrounds switching rapidly down the page, and inconsistent padding. This phase addresses all five issues.
+
+**Files to modify:**
+- `client/src/components/modules/PlaceModuleCard.module.css`
+- `client/src/components/modules/ArticleModuleCard.module.css`
+- `client/src/components/modules/ProductModuleCard.module.css`
+- `client/src/components/modules/EventModuleCard.module.css`
+- `client/src/components/modules/PostModuleCard.module.css`
+- `client/src/components/modules/PlaylistModuleCard.module.css`
+- `client/src/pages/GuideDetailPage/GuideDetailPage.module.css`
+
+**Tasks:**
+
+1. **Remove outer card borders; separate with whitespace:**
+   - Remove `border: 1px solid var(--gray-200)` from the root card element of all six module components.
+   - Increase the module list gap from `16px` to `28px` in `GuideDetailPage.module.css`.
+   - Do not add box shadows as a replacement — let whitespace do the work.
+
+2. **Add type-specific left-border accents:**
+   - Each module card gets `border-left: 3px solid <accent>` on its root element. Accent colors by type:
+     - `PlaceModuleCard` → `var(--red)`
+     - `ArticleModuleCard` → `var(--blue)`
+     - `EventModuleCard` → `var(--red)` (the date sidebar already uses red; the left border reinforces it)
+     - `PostModuleCard` → `var(--gray-500)`
+     - `ProductModuleCard` → `var(--gray-200)` (neutral unless `isMemberDeal`; if `isMemberDeal`, use `var(--gold)`)
+     - `PlaylistModuleCard` → remove border entirely; use full-width iframe treatment (no left border on playlist)
+   - Add `padding-left: 12px` to the card body to offset from the accent border.
+
+3. **Consolidate badge shapes to two variants:**
+   - **Pill** (`border-radius: 20px`): author chips, collaborator chips, interest/category badges on the guide header
+   - **Tag** (`border-radius: 2px`): content labels — "Sponsored", "From the newsroom", neighborhood labels
+   - All other inline labels (source names on article cards, price on product cards) should be plain styled text — remove their border and background, just use `font-weight: 600` and appropriate color.
+   - Audit every `.module.css` file for badge-like elements and apply one of the two shapes or convert to plain text.
+
+4. **Reduce background color switching in the guide detail page:**
+   - The remix attribution block: remove its `background: var(--gray-100)` — replace with a single `border-top: 1px solid var(--gray-200)` and no background color.
+   - The engagement row (Save / Like / Helpful): remove `border-top` + `border-bottom` double-border — keep only `border-top: 1px solid var(--gray-200)`.
+   - Do not change the hero section (`--gray-900` background) or the event date sidebar (`--red` background) — these are intentional structural anchors.
+
+5. **Normalize internal card padding:**
+   - Set all module card body padding to `16px 20px` uniformly.
+   - If a card has a header row (e.g. the image + title row in PlaceModuleCard), that row may use different padding only if it contains an image that bleeds to the edge — otherwise match `16px 20px`.
+   - Update `GuideDetailPage.module.css` to use `16px 20px` for the author row and guide metadata row if they differ.
+
+**Smoke test:**
+1. Open any guide detail page (e.g. `/guide/guide-001`).
+2. Confirm: no outer border boxes around any module card. Module types are visually separated by whitespace and distinct left-border accents (red for places, blue for articles, gray for posts, etc.).
+3. Confirm: playlist module has no left border and its iframe is full-width within the content column.
+4. Confirm: product module with `isMemberDeal: true` has a gold left border; a regular product module has a light gray left border.
+5. Confirm: the remix attribution block has no gray background — just a top divider.
+6. Confirm: the engagement row has one border-top only, not top + bottom.
+7. Confirm all text is legible — no contrast regressions introduced.
+8. Confirm the page still looks correct on mobile (375px viewport).
+
+**Dependencies:** Phase 9 complete.
+
+---
+
 ## Section 7: Deployment Notes
 
 ### Railway Configuration
