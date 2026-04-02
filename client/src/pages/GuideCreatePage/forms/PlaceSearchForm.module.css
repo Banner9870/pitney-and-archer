@@ -1,0 +1,202 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.searchRow {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 10px 12px;
+  border: 2px solid var(--gray-200);
+  border-radius: 4px;
+  color: var(--black);
+  background: var(--white);
+  transition: border-color 0.15s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--red);
+}
+
+.searchBtn {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+}
+
+.searchBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--red);
+  margin: 0;
+}
+
+.fallbackNote {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  margin: 0;
+}
+
+.resultsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 2px solid var(--gray-200);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.result:last-child {
+  border-bottom: none;
+}
+
+.resultInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.resultName {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.resultAddress {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+.resultCategory {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--gray-500);
+  text-transform: capitalize;
+}
+
+.addBtn {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+}
+
+.addBtn:hover {
+  opacity: 0.85;
+}
+
+.notePanel {
+  border: 2px solid var(--gray-200);
+  border-radius: 4px;
+  padding: 16px;
+  background: var(--gray-100);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notePanelTitle {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--black);
+  margin: 0;
+}
+
+.noteInput {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  padding: 10px 12px;
+  border: 2px solid var(--gray-200);
+  border-radius: 4px;
+  color: var(--black);
+  background: var(--white);
+  resize: vertical;
+  min-height: 80px;
+  transition: border-color 0.15s;
+}
+
+.noteInput:focus {
+  outline: none;
+  border-color: var(--red);
+}
+
+.noteError {
+  font-family: var(--font-body);
+  font-size: 0.83rem;
+  color: var(--red);
+  margin: 0;
+}
+
+.noteActions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cancelBtn {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.confirmBtn {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 8px 20px;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.confirmBtn:hover {
+  opacity: 0.85;
+}

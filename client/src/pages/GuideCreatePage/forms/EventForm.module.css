@@ -1,0 +1,17 @@
+/* Same layout patterns as ProductForm */
+.form { display: flex; flex-direction: column; gap: 16px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.label { font-family: var(--font-ui); font-size: 0.82rem; font-weight: 700; color: var(--black); text-transform: uppercase; letter-spacing: 0.04em; }
+.optional { color: var(--gray-500); font-weight: 400; text-transform: none; letter-spacing: 0; }
+.input, .select { font-family: var(--font-body); font-size: 0.95rem; padding: 9px 12px; border: 2px solid var(--gray-200); border-radius: 4px; color: var(--black); background: var(--white); transition: border-color 0.15s; width: 100%; box-sizing: border-box; }
+.input:focus, .select:focus, .textarea:focus { outline: none; border-color: var(--red); }
+.textarea { font-family: var(--font-body); font-size: 0.95rem; padding: 9px 12px; border: 2px solid var(--gray-200); border-radius: 4px; color: var(--black); background: var(--white); resize: vertical; min-height: 70px; transition: border-color 0.15s; width: 100%; box-sizing: border-box; }
+.err { font-family: var(--font-body); font-size: 0.8rem; color: var(--red); }
+.photoGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 6px; }
+.photoThumb { position: relative; aspect-ratio: 16 / 9; border: 2px solid transparent; border-radius: 3px; overflow: hidden; cursor: pointer; padding: 0; background: none; transition: border-color 0.15s; }
+.photoThumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photoThumb:hover { border-color: var(--gray-500); }
+.photoSelected { border-color: var(--red) !important; }
+.photoCheck { position: absolute; top: 2px; right: 3px; background: var(--red); color: var(--white); font-size: 0.65rem; font-weight: 700; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.addBtn { font-family: var(--font-ui); font-size: 0.95rem; font-weight: 700; padding: 12px 28px; background: var(--red); color: var(--white); border: none; border-radius: 4px; cursor: pointer; align-self: flex-start; transition: opacity 0.15s; }
+.addBtn:hover { opacity: 0.85; }

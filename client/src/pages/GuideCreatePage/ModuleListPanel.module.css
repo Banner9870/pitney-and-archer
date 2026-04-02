@@ -1,0 +1,136 @@
+.empty {
+  padding: 20px;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--gray-500);
+  border: 2px dashed var(--gray-200);
+  border-radius: 4px;
+}
+
+.list {
+  border: 2px solid var(--gray-200);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.listHeader {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 12px;
+  background: var(--gray-100);
+  margin: 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--white);
+  cursor: grab;
+  transition: background 0.1s;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.dragHandle {
+  font-size: 1rem;
+  color: var(--gray-500);
+  cursor: grab;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+/* Hide drag handle on mobile, show arrows */
+@media (max-width: 768px) {
+  .dragHandle {
+    display: none;
+  }
+}
+
+.icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.preview {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--black);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Mobile arrow buttons — hidden on desktop */
+.mobileArrows {
+  display: none;
+  gap: 4px;
+}
+
+@media (max-width: 768px) {
+  .mobileArrows {
+    display: flex;
+  }
+}
+
+.arrowBtn {
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gray-200);
+  border-radius: 3px;
+  background: var(--white);
+  color: var(--black);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.arrowBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.arrowBtn:not(:disabled):hover {
+  background: var(--gray-100);
+}
+
+.removeBtn {
+  font-size: 1.1rem;
+  line-height: 1;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  color: var(--gray-500);
+  cursor: pointer;
+  border-radius: 3px;
+  flex-shrink: 0;
+  transition: color 0.1s, background 0.1s;
+}
+
+.removeBtn:hover {
+  color: var(--red);
+  background: #fff0f3;
+}

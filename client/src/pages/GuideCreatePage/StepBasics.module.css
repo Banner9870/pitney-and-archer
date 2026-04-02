@@ -1,0 +1,253 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--black);
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+
+/* ─── Field ──────────────────────────────────────────────────── */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.required {
+  color: var(--red);
+}
+
+.optional {
+  color: var(--gray-500);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.input,
+.select {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--black);
+  border: 2px solid var(--gray-200);
+  border-radius: 4px;
+  padding: 10px 12px;
+  background: var(--white);
+  transition: border-color 0.15s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--red);
+}
+
+.textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--black);
+  border: 2px solid var(--gray-200);
+  border-radius: 4px;
+  padding: 10px 12px;
+  background: var(--white);
+  transition: border-color 0.15s;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.charCount {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  align-self: flex-end;
+  margin-top: -4px;
+}
+
+/* ─── Badge chips ────────────────────────────────────────────── */
+
+.badgeGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 2px solid var(--gray-200);
+  background: var(--white);
+  color: var(--gray-500);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.badge:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.badgeActive {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--white);
+}
+
+/* ─── Cover photo grid ───────────────────────────────────────── */
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+}
+
+.photoThumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  transition: border-color 0.15s;
+}
+
+.photoThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photoThumb:hover {
+  border-color: var(--gray-500);
+}
+
+.photoSelected {
+  border-color: var(--red) !important;
+}
+
+.photoCheck {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background: var(--red);
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Privacy radio ──────────────────────────────────────────── */
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 2px solid var(--gray-200);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.radioLabel:hover {
+  border-color: var(--gray-500);
+}
+
+.radioActive {
+  border-color: var(--red);
+  background: #fff5f7;
+}
+
+.radioInput {
+  margin-top: 3px;
+  accent-color: var(--red);
+}
+
+.radioContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.radioTitle {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.radioDesc {
+  font-family: var(--font-body);
+  font-size: 0.83rem;
+  color: var(--gray-500);
+}
+
+/* ─── Actions ────────────────────────────────────────────────── */
+
+.actions {
+  padding-top: 8px;
+}
+
+.tooltipWrapper {
+  display: inline-block;
+}
+
+.continueBtn {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 32px;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.continueBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.continueBtn:not(:disabled):hover {
+  opacity: 0.88;
+}
