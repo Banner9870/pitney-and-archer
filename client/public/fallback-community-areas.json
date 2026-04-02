@@ -1,0 +1,464 @@
+[
+  {
+    "id": "1",
+    "name": "Rogers Park",
+    "slug": "rogers-park",
+    "population": 54991
+  },
+  {
+    "id": "2",
+    "name": "West Ridge",
+    "slug": "west-ridge",
+    "population": 15026
+  },
+  {
+    "id": "3",
+    "name": "Uptown",
+    "slug": "uptown",
+    "population": 56362
+  },
+  {
+    "id": "4",
+    "name": "Lincoln Square",
+    "slug": "lincoln-square",
+    "population": 65786
+  },
+  {
+    "id": "5",
+    "name": "North Center",
+    "slug": "north-center",
+    "population": 17428
+  },
+  {
+    "id": "6",
+    "name": "Lake View",
+    "slug": "lake-view",
+    "population": 20567
+  },
+  {
+    "id": "7",
+    "name": "Lincoln Park",
+    "slug": "lincoln-park",
+    "population": 35325
+  },
+  {
+    "id": "8",
+    "name": "Near North Side",
+    "slug": "near-north-side",
+    "population": 31198
+  },
+  {
+    "id": "9",
+    "name": "Edison Park",
+    "slug": "edison-park",
+    "population": 55781
+  },
+  {
+    "id": "10",
+    "name": "Norwood Park",
+    "slug": "norwood-park",
+    "population": 75408
+  },
+  {
+    "id": "11",
+    "name": "Jefferson Park",
+    "slug": "jefferson-park",
+    "population": 35602
+  },
+  {
+    "id": "12",
+    "name": "Forest Glen",
+    "slug": "forest-glen",
+    "population": 54126
+  },
+  {
+    "id": "13",
+    "name": "North Park",
+    "slug": "north-park",
+    "population": 70408
+  },
+  {
+    "id": "14",
+    "name": "Albany Park",
+    "slug": "albany-park",
+    "population": 77004
+  },
+  {
+    "id": "15",
+    "name": "Portage Park",
+    "slug": "portage-park",
+    "population": 86121
+  },
+  {
+    "id": "16",
+    "name": "Irving Park",
+    "slug": "irving-park",
+    "population": 68057
+  },
+  {
+    "id": "17",
+    "name": "Dunning",
+    "slug": "dunning",
+    "population": 73595
+  },
+  {
+    "id": "18",
+    "name": "Montclare",
+    "slug": "montclare",
+    "population": 41638
+  },
+  {
+    "id": "19",
+    "name": "Belmont Cragin",
+    "slug": "belmont-cragin",
+    "population": 43083
+  },
+  {
+    "id": "20",
+    "name": "Hermosa",
+    "slug": "hermosa",
+    "population": 31006
+  },
+  {
+    "id": "21",
+    "name": "Avondale",
+    "slug": "avondale",
+    "population": 67166
+  },
+  {
+    "id": "22",
+    "name": "Logan Square",
+    "slug": "logan-square",
+    "population": 30686
+  },
+  {
+    "id": "23",
+    "name": "Humboldt Park",
+    "slug": "humboldt-park",
+    "population": 60010
+  },
+  {
+    "id": "24",
+    "name": "West Town",
+    "slug": "west-town",
+    "population": 28083
+  },
+  {
+    "id": "25",
+    "name": "Austin",
+    "slug": "austin",
+    "population": 81432
+  },
+  {
+    "id": "26",
+    "name": "West Garfield Park",
+    "slug": "west-garfield-park",
+    "population": 25930
+  },
+  {
+    "id": "27",
+    "name": "East Garfield Park",
+    "slug": "east-garfield-park",
+    "population": 20567
+  },
+  {
+    "id": "28",
+    "name": "Near West Side",
+    "slug": "near-west-side",
+    "population": 89821
+  },
+  {
+    "id": "29",
+    "name": "North Lawndale",
+    "slug": "north-lawndale",
+    "population": 45816
+  },
+  {
+    "id": "30",
+    "name": "South Lawndale",
+    "slug": "south-lawndale",
+    "population": 55563
+  },
+  {
+    "id": "31",
+    "name": "Lower West Side",
+    "slug": "lower-west-side",
+    "population": 44375
+  },
+  {
+    "id": "32",
+    "name": "Loop",
+    "slug": "loop",
+    "population": 56822
+  },
+  {
+    "id": "33",
+    "name": "Near South Side",
+    "slug": "near-south-side",
+    "population": 71456
+  },
+  {
+    "id": "34",
+    "name": "Armour Square",
+    "slug": "armour-square",
+    "population": 56765
+  },
+  {
+    "id": "35",
+    "name": "Douglas",
+    "slug": "douglas",
+    "population": 51134
+  },
+  {
+    "id": "36",
+    "name": "Oakland",
+    "slug": "oakland",
+    "population": 84437
+  },
+  {
+    "id": "37",
+    "name": "Fuller Park",
+    "slug": "fuller-park",
+    "population": 68765
+  },
+  {
+    "id": "38",
+    "name": "Grand Boulevard",
+    "slug": "grand-boulevard",
+    "population": 61234
+  },
+  {
+    "id": "39",
+    "name": "Kenwood",
+    "slug": "kenwood",
+    "population": 43876
+  },
+  {
+    "id": "40",
+    "name": "Washington Park",
+    "slug": "washington-park",
+    "population": 28765
+  },
+  {
+    "id": "41",
+    "name": "Hyde Park",
+    "slug": "hyde-park",
+    "population": 47654
+  },
+  {
+    "id": "42",
+    "name": "Woodlawn",
+    "slug": "woodlawn",
+    "population": 35987
+  },
+  {
+    "id": "43",
+    "name": "South Shore",
+    "slug": "south-shore",
+    "population": 23456
+  },
+  {
+    "id": "44",
+    "name": "Chatham",
+    "slug": "chatham",
+    "population": 53209
+  },
+  {
+    "id": "45",
+    "name": "Avalon Park",
+    "slug": "avalon-park",
+    "population": 78901
+  },
+  {
+    "id": "46",
+    "name": "South Chicago",
+    "slug": "south-chicago",
+    "population": 59012
+  },
+  {
+    "id": "47",
+    "name": "Burnside",
+    "slug": "burnside",
+    "population": 38901
+  },
+  {
+    "id": "48",
+    "name": "Calumet Heights",
+    "slug": "calumet-heights",
+    "population": 42345
+  },
+  {
+    "id": "49",
+    "name": "Roseland",
+    "slug": "roseland",
+    "population": 23104
+  },
+  {
+    "id": "50",
+    "name": "Pullman",
+    "slug": "pullman",
+    "population": 47890
+  },
+  {
+    "id": "51",
+    "name": "South Deering",
+    "slug": "south-deering",
+    "population": 35321
+  },
+  {
+    "id": "52",
+    "name": "East Side",
+    "slug": "east-side",
+    "population": 46789
+  },
+  {
+    "id": "53",
+    "name": "West Pullman",
+    "slug": "west-pullman",
+    "population": 49012
+  },
+  {
+    "id": "54",
+    "name": "Riverdale",
+    "slug": "riverdale",
+    "population": 31234
+  },
+  {
+    "id": "55",
+    "name": "Hegewisch",
+    "slug": "hegewisch",
+    "population": 24567
+  },
+  {
+    "id": "56",
+    "name": "Garfield Ridge",
+    "slug": "garfield-ridge",
+    "population": 29876
+  },
+  {
+    "id": "57",
+    "name": "Archer Heights",
+    "slug": "archer-heights",
+    "population": 39012
+  },
+  {
+    "id": "58",
+    "name": "Brighton Park",
+    "slug": "brighton-park",
+    "population": 54321
+  },
+  {
+    "id": "59",
+    "name": "Mckinley Park",
+    "slug": "mckinley-park",
+    "population": 45678
+  },
+  {
+    "id": "60",
+    "name": "Bridgeport",
+    "slug": "bridgeport",
+    "population": 37890
+  },
+  {
+    "id": "61",
+    "name": "New City",
+    "slug": "new-city",
+    "population": 28901
+  },
+  {
+    "id": "62",
+    "name": "West Elsdon",
+    "slug": "west-elsdon",
+    "population": 34567
+  },
+  {
+    "id": "63",
+    "name": "Gage Park",
+    "slug": "gage-park",
+    "population": 34321
+  },
+  {
+    "id": "64",
+    "name": "Clearing",
+    "slug": "clearing",
+    "population": 18765
+  },
+  {
+    "id": "65",
+    "name": "West Lawn",
+    "slug": "west-lawn",
+    "population": 24321
+  },
+  {
+    "id": "66",
+    "name": "Chicago Lawn",
+    "slug": "chicago-lawn",
+    "population": 23456
+  },
+  {
+    "id": "67",
+    "name": "West Englewood",
+    "slug": "west-englewood",
+    "population": 19876
+  },
+  {
+    "id": "68",
+    "name": "Englewood",
+    "slug": "englewood",
+    "population": 34987
+  },
+  {
+    "id": "69",
+    "name": "Greater Grand Crossing",
+    "slug": "greater-grand-crossing",
+    "population": 31123
+  },
+  {
+    "id": "70",
+    "name": "Ashburn",
+    "slug": "ashburn",
+    "population": 25987
+  },
+  {
+    "id": "71",
+    "name": "Auburn Gresham",
+    "slug": "auburn-gresham",
+    "population": 28543
+  },
+  {
+    "id": "72",
+    "name": "Beverly",
+    "slug": "beverly",
+    "population": 33210
+  },
+  {
+    "id": "73",
+    "name": "Washington Heights",
+    "slug": "washington-heights",
+    "population": 27456
+  },
+  {
+    "id": "74",
+    "name": "Mount Greenwood",
+    "slug": "mount-greenwood",
+    "population": 35432
+  },
+  {
+    "id": "75",
+    "name": "Morgan Park",
+    "slug": "morgan-park",
+    "population": 38987
+  },
+  {
+    "id": "76",
+    "name": "Ohare",
+    "slug": "ohare",
+    "population": 29876
+  },
+  {
+    "id": "77",
+    "name": "Edgewater",
+    "slug": "edgewater",
+    "population": 42345
+  }
+]

@@ -6,6 +6,7 @@ import Layout from './components/Layout/Layout.jsx'
 import Toast from './components/Toast/Toast.jsx'
 import useToast from './components/Toast/useToast.js'
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary.jsx'
+import { useAppContext } from './context/AppContext.jsx'
 import FeedPage from './pages/FeedPage/FeedPage.jsx'
 import ExplorePage from './pages/ExplorePage/ExplorePage.jsx'
 import GuideCreatePage from './pages/GuideCreatePage/GuideCreatePage.jsx'
@@ -17,13 +18,14 @@ import NotFoundPage from './pages/NotFoundPage.jsx'
 
 export default function App() {
   const { message, visible, showToast, dismiss } = useToast()
+  const { dispatch } = useAppContext()
 
   useEffect(() => {
     let shiftDownAt = null
     const onKeyDown = (e) => { if (e.key === 'R' && e.shiftKey) shiftDownAt = Date.now() }
     const onKeyUp = (e) => {
       if (e.key === 'R' && shiftDownAt && Date.now() - shiftDownAt >= 2000) {
-        // dispatch({ type: 'RESET_SESSION' }) — wired in Phase 2 when AppContext exists
+        dispatch({ type: 'RESET_SESSION' })
         showToast('Session reset')
       }
       shiftDownAt = null
@@ -31,7 +33,7 @@ export default function App() {
     window.addEventListener('keydown', onKeyDown)
     window.addEventListener('keyup', onKeyUp)
     return () => { window.removeEventListener('keydown', onKeyDown); window.removeEventListener('keyup', onKeyUp) }
-  }, [showToast])
+  }, [dispatch, showToast])
 
   return (
     <ErrorBoundary>
