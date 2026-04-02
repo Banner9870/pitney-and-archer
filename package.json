@@ -1,0 +1,11 @@
+{
+  "name": "pitney-and-archer",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
