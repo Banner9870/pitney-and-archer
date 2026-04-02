@@ -204,8 +204,10 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 4px;
+  padding: 10px;
   margin-left: auto;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .hamburger span {
@@ -234,6 +236,9 @@
   text-decoration: none;
   padding: 10px 8px;
   border-radius: 4px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .drawerLink:hover {

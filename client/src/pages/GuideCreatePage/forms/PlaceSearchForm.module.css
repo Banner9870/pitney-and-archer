@@ -45,6 +45,19 @@
   cursor: not-allowed;
 }
 
+.loadingNote {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin: 0;
+  animation: pulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 1; }
+  to { opacity: 0.4; }
+}
+
 .error {
   font-family: var(--font-body);
   font-size: 0.85rem;

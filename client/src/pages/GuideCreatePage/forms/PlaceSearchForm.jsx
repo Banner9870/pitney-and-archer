@@ -78,7 +78,7 @@ export default function PlaceSearchForm({ onAddModule }) {
         setResults(mapped)
       }
     } catch {
-      setError('Search unavailable — showing local results')
+      setError('Search unavailable — try a different term')
       setResults(seedSearch(q))
       setUsedFallback(true)
     }
@@ -131,6 +131,7 @@ export default function PlaceSearchForm({ onAddModule }) {
         </button>
       </form>
 
+      {loading && <p className={styles.loadingNote} aria-live="polite">Searching…</p>}
       {error && <p className={styles.error}>{error}</p>}
       {usedFallback && !error && results.length > 0 && (
         <p className={styles.fallbackNote}>Showing local results — live search unavailable</p>
