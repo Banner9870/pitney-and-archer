@@ -864,7 +864,7 @@ Each place should have: `id`, `name`, `address`, `neighborhood`, `category`, `ra
    ```
 
 2. **`Header`** — fixed top bar, `var(--black)` background, `var(--white)` text.
-   - Left: chicago.com wordmark using Big Shoulders Display, bold. Include a red ★ before the wordmark.
+   - Left: chicago.com wordmark using Big Shoulders Display, `font-weight: 900` (900 is the correct weight for Big Shoulders Display — "bold" and "900" are equivalent here since only 900 is loaded). Include a red ★ before the wordmark.
    - Center (desktop only, hidden on mobile): `<nav>` with links to `/feed`, `/explore`, and a Neighborhoods dropdown (hardcode 5–6 neighborhood names for now; Phase 8 will wire up all 77).
    - Right: `<Link to="/guide/new">+ Create Guide</Link>` styled as a red button, then an account chip showing "Alex Rivera / @alexrivera" (non-interactive for now — full dropdown not required).
    - Mobile: hamburger icon button that toggles an inline drawer with all nav links.

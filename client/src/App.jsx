@@ -16,7 +16,7 @@ import ProfilePage from './pages/ProfilePage/ProfilePage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
 
 export default function App() {
-  const { message, visible, showToast } = useToast()
+  const { message, visible, showToast, dismiss } = useToast()
 
   useEffect(() => {
     let shiftDownAt = null
@@ -108,7 +108,7 @@ export default function App() {
           </Routes>
         </main>
         <Footer />
-        <Toast message={message} visible={visible} />
+        <Toast message={message} visible={visible} onDismiss={dismiss} />
       </div>
     </ErrorBoundary>
   )
