@@ -397,7 +397,7 @@ export const SEED_GUIDES = [
         type: 'post',
         body: "How to find the perfect hammock spot in Humboldt Park Natural Area:\n\nFrom the Sacramento entrance, walk north along the lagoon path for about 8 minutes. You'll pass the boat launch on your left. Keep going until you see the cluster of old oaks just past the footbridge — that's your spot.\n\nThe canopy here is dense enough to block direct sun but still lets in the breeze off the water. The ground is flat and the anchor trees are about 15 feet apart, which is ideal for a standard hammock.\n\nBring bug spray in June and July. A tarp is useful but not essential. Go on a Tuesday morning and you may have the whole clearing to yourself.\n\nThere is no bad time of year for this, including winter if you have the right sleeping bag. The park looks completely different with snow on the ground.",
         images: [
-          'https://images.unsplash.com/photo-1477415348463-c0eb7f1359b6?w=800&auto=format&q=80',
+          'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=800&auto=format&q=80',
         ],
         isLong: true,
       },

@@ -43,6 +43,16 @@ export default function PlaceModuleCard({ module: m }) {
       <div className={styles.body}>
         <h3 className={styles.name}>{m.name}</h3>
         {m.address && <p className={styles.address}>{m.address}</p>}
+        {(m.name || m.address) && (
+          <a
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent([m.name, m.address].filter(Boolean).join(', '))}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.mapsLink}
+          >
+            Open in Google Maps →
+          </a>
+        )}
         <div className={styles.meta}>
           <span className={styles.category}>
             {CATEGORY_ICONS[m.category] ?? '📍'} {m.category}

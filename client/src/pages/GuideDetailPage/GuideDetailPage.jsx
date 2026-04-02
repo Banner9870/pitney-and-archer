@@ -44,6 +44,9 @@ export default function GuideDetailPage() {
   const { state, dispatch } = useAppContext()
   const { message, visible, showToast, dismiss } = useToast()
 
+  // Scroll to top on mount
+  useEffect(() => { window.scrollTo(0, 0) }, [])
+
   // Success banner state — read location.state?.isNew on mount
   const [showBanner, setShowBanner] = useState(false)
   const bannerTimerRef = useRef(null)
