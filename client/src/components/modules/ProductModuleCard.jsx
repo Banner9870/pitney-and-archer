@@ -3,7 +3,7 @@ import styles from './ProductModuleCard.module.css'
 
 export default function ProductModuleCard({ module: m }) {
   return (
-    <div className={styles.card}>
+    <div className={m.isMemberDeal ? `${styles.card} ${styles.cardMemberDeal}` : styles.card}>
       {m.coverImage && (
         <img src={m.coverImage} alt={m.name} className={styles.cover} />
       )}

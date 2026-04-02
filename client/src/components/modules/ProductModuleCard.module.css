@@ -1,8 +1,12 @@
 .card {
   background: var(--white);
-  border: 1px solid var(--gray-200);
+  border-left: 3px solid var(--gray-200);
   border-radius: 4px;
   overflow: hidden;
+}
+
+.cardMemberDeal {
+  border-left-color: var(--gold);
 }
 
 .cover {
@@ -13,7 +17,7 @@
 }
 
 .body {
-  padding: 16px;
+  padding: 16px 20px 16px 12px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -35,13 +39,10 @@
 }
 
 .price {
-  background: var(--red);
-  color: var(--white);
+  color: var(--red);
   font-family: var(--font-ui);
   font-size: 0.85rem;
   font-weight: 700;
-  padding: 2px 8px;
-  border-radius: 3px;
   white-space: nowrap;
 }
 

@@ -111,7 +111,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 16px 24px;
+  padding: 16px 20px;
   background: var(--white);
   border-bottom: 1px solid var(--gray-200);
   flex-wrap: wrap;
@@ -153,10 +153,7 @@
 .yearsBadge {
   font-size: 0.78rem;
   color: var(--gray-500);
-  background: var(--gray-100);
-  border: 1px solid var(--gray-200);
-  padding: 2px 8px;
-  border-radius: 10px;
+  font-weight: 600;
 }
 
 .followBtn {
@@ -221,7 +218,7 @@
   padding: 3px 10px;
   background: var(--blue);
   color: var(--white);
-  border-radius: 10px;
+  border-radius: 20px;
   font-family: var(--font-body);
 }
 
@@ -236,9 +233,7 @@
 .remixAttr {
   font-size: 0.88rem;
   color: var(--gray-500);
-  background: var(--gray-100);
-  border: 1px solid var(--gray-200);
-  border-radius: 4px;
+  border-top: 1px solid var(--gray-200);
   padding: 10px 14px;
   line-height: 1.5;
 }
@@ -263,7 +258,7 @@
 .moduleList {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 28px;
 }
 
 /* ─── Collaborators ──────────────────────────────────────────── */
@@ -326,7 +321,6 @@
   gap: 8px;
   padding: 16px 0;
   border-top: 1px solid var(--gray-200);
-  border-bottom: 1px solid var(--gray-200);
 }
 
 .engBtn {
