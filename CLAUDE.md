@@ -139,10 +139,11 @@ Each module is a discriminated union on the `type` field. The guide detail page 
 
 ```
 VITE_GOOGLE_PLACES_API_KEY=       # Required for guide creation place search
-VITE_CHICAGO_DATA_PORTAL_TOKEN=   # Socrata App Token; optional locally but prevents rate limiting
 ```
 
-Both values are available from the v1 project at `../keeley-and-archer/client/.env`. Do not copy that file — transcribe the values into this project's `.env` manually. Do not commit `.env`.
+This value is available from the v1 project at `../keeley-and-archer/client/.env`. Do not copy that file — transcribe the value into this project's `.env` manually. Do not commit `.env`.
+
+Note: `VITE_CHICAGO_DATA_PORTAL_TOKEN` was removed. Community areas are now loaded from the bundled `public/fallback-community-areas.json` — no Socrata API call is made.
 
 Restrict the Google Places API key in Google Cloud Console to the new Railway domain once it is known. Add `localhost` to the allowlist for local development.
 
