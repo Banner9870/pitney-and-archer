@@ -1,0 +1,73 @@
+.card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.gallerySingle {
+  grid-template-columns: 1fr;
+}
+
+.galleryImage {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.gallerySingle .galleryImage {
+  aspect-ratio: 16 / 9;
+}
+
+.body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bodyText {
+  font-family: var(--font-article);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--black);
+  white-space: pre-line;
+}
+
+.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.toggleBtn {
+  background: none;
+  border: none;
+  color: var(--red);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.toggleBtn:hover {
+  text-decoration: underline;
+}
+
+.editorNote {
+  font-family: var(--font-article);
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  font-style: italic;
+  line-height: 1.5;
+}

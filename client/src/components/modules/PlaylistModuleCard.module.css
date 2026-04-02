@@ -1,0 +1,86 @@
+.card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.platformIcon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.title {
+  font-family: var(--font-ui);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.description {
+  font-size: 0.88rem;
+  color: var(--gray-500);
+  line-height: 1.4;
+}
+
+.editorNote {
+  font-family: var(--font-article);
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.iframeWrapper {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    var(--gray-200) 25%,
+    var(--gray-100) 50%,
+    var(--gray-200) 75%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.4s infinite linear;
+  border-radius: 4px;
+}
+
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.iframe {
+  display: block;
+  border-radius: 4px;
+}
+
+.iframeHidden {
+  opacity: 0;
+  display: block;
+  border-radius: 4px;
+}

@@ -1,0 +1,83 @@
+.card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.name {
+  font-family: var(--font-ui);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--black);
+  flex: 1;
+}
+
+.price {
+  background: var(--red);
+  color: var(--white);
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--black);
+  line-height: 1.5;
+}
+
+.where {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+}
+
+.memberDeal {
+  background: var(--gold);
+  color: var(--white);
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+.chistar {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 900;
+  font-feature-settings: "dlig" 1;
+  color: var(--white);
+}
+
+.editorNote {
+  font-family: var(--font-article);
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  font-style: italic;
+  line-height: 1.5;
+}

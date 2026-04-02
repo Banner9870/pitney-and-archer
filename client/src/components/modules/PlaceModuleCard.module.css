@@ -1,0 +1,72 @@
+.card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.name {
+  font-family: var(--font-ui);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.address {
+  font-size: 0.82rem;
+  color: var(--gray-500);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.category {
+  font-size: 0.82rem;
+  color: var(--gray-500);
+  text-transform: capitalize;
+}
+
+.rating {
+  font-size: 0.82rem;
+  color: var(--gray-500);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.stars {
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+.reviewCount {
+  color: var(--gray-500);
+}
+
+.editorNote {
+  font-family: var(--font-article);
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  font-style: italic;
+  margin-top: 4px;
+  line-height: 1.5;
+}
