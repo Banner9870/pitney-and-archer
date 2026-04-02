@@ -100,19 +100,19 @@ export default function GuideCard({ guide }) {
 
           {/* Overlay badges */}
           <div className={styles.overlayBadges}>
-            <span className={styles.guidePill}>★ GUIDE</span>
+            <span className={styles.guidePill}><span className={styles.chistar}>CHISTAR</span> GUIDE</span>
             {guide.isSponsored && (
               <span className={styles.sponsoredPill}>Sponsored</span>
             )}
           </div>
           {guide.isEditorsPick && (
-            <span className={styles.editorsPickLabel}>★ Editor's Pick</span>
+            <span className={styles.editorsPickLabel}><span className={styles.chistar}>CHISTAR</span> Editor's Pick</span>
           )}
           {guide.isReviewed && !guide.isEditorsPick && (
             <span className={styles.reviewedLabel}>Reviewed</span>
           )}
           {guide.isNewsroom && (
-            <span className={styles.newsroomLabel}>★ From the newsroom</span>
+            <span className={styles.newsroomLabel}><span className={styles.chistar}>CHISTAR</span> From the newsroom</span>
           )}
         </div>
 

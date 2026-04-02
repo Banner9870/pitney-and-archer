@@ -265,7 +265,7 @@ React components ◄── useAppContext() ───────────┘
 - `ArticleCard` — props: `article: RSSArticle`
 - `FilterPanel` — reads/writes feed.filters via context dispatch
 - `SkeletonCard` — guide skeleton (6 shown on initial load)
-- `FeedInfoModal` — "How your feed works" modal
+- `FeedInfoModal` — "How your feed works" modal. Two sections: feed ordering (5 tiers) and filtering. Phase 3 builds the static version; Phase 9 upgrades it to dynamic copy (see Phase 9 task 10).
 
 **Module components** (used in GuideDetailPage and StepReview)
 - `PlaceModuleCard` — props: `module: PlaceModule`
@@ -292,6 +292,40 @@ React components ◄── useAppContext() ───────────┘
 - `ErrorBoundary` — wraps entire app
 - `Toast` / `useToast` — shared toast notification system. Built in Phase 1. Used by all subsequent phases. Props: `message: string, duration?: number (default 4000)`. Renders a fixed bottom-center banner that auto-dismisses. `useToast()` hook returns `{ showToast(message, duration?) }`. Do not build ad-hoc toasts in individual phases — always import `useToast`.
 - `SkeletonArticleCard` — animated shimmer card matching ArticleCard dimensions. Built in Phase 3 alongside `SkeletonCard`.
+
+---
+
+### Chicago Star Implementation
+
+**The Chicago municipal star is six-pointed — not five.** The Unicode `★` character (U+2605) is a five-pointed star and must not be used anywhere the Chicago star is intended.
+
+**Correct implementation:** The official Chicago design system renders the star via a discretionary ligature in Big Shoulders. Type the string `CHISTAR` in Big Shoulders Display or Big Shoulders Text with `font-feature-settings: "dlig" 1` (discretionary ligatures enabled). This renders the correct six-pointed star at any size.
+
+```css
+.chicagoStar {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 900;
+  font-feature-settings: "dlig" 1;
+  color: var(--red);
+  /* render the star: */
+  /* content: "CHISTAR" or render as text node */
+}
+```
+
+In JSX: `<span className={styles.chicagoStar}>CHISTAR</span>`. The ligature engine converts "CHISTAR" to the six-pointed star glyph automatically when discretionary ligatures are enabled.
+
+**Where the Chicago star is used in the prototype** (all must use the CHISTAR ligature method):
+- Header wordmark: red star before "chicago.com"
+- `GUIDE` pill badge on guide cards ✓ applied in GuideCard.jsx
+- `Editor's Pick` label on guide cards ✓ applied in GuideCard.jsx
+- `From the newsroom` label (journalist guides) ✓ applied in GuideCard.jsx
+- Journalist ★ badge in profile headers (Phase 7)
+- `CPM Member Deal` callout in ProductModuleCard ✓ applied in ProductModuleCard.jsx
+
+**Where Unicode stars are acceptable** (not the municipal star — just decorative or rating indicators):
+- Star rating display (e.g. ★★★★☆) — five-pointed Unicode stars are standard for ratings
+
+**American English spelling:** Use "neighborhoods" throughout — never "neighbourhoods". This applies to all UI text, code comments, seed data, and documentation.
 
 ---
 
@@ -864,7 +898,7 @@ Each place should have: `id`, `name`, `address`, `neighborhood`, `category`, `ra
    ```
 
 2. **`Header`** — fixed top bar, `var(--black)` background, `var(--white)` text.
-   - Left: chicago.com wordmark using Big Shoulders Display, `font-weight: 900` (900 is the correct weight for Big Shoulders Display — "bold" and "900" are equivalent here since only 900 is loaded). Include a red ★ before the wordmark.
+   - Left: chicago.com wordmark using Big Shoulders Display, `font-weight: 900`. Include a red six-pointed Chicago star before the wordmark. **Do not use the Unicode ★ character** — render the star using the CHISTAR Big Shoulders ligature (see "Chicago Star Implementation" in Section 3). Example: `<span className={styles.chistar}>CHISTAR</span>` with `font-feature-settings: "dlig" 1` and `color: var(--red)`.
    - Center (desktop only, hidden on mobile): `<nav>` with links to `/feed`, `/explore`, and a Neighborhoods dropdown (hardcode 5–6 neighborhood names for now; Phase 8 will wire up all 77).
    - Right: `<Link to="/guide/new">+ Create Guide</Link>` styled as a red button, then an account chip showing "Alex Rivera / @alexrivera" (non-interactive for now — full dropdown not required).
    - Mobile: hamburger icon button that toggles an inline drawer with all nav links.
@@ -1042,7 +1076,8 @@ Each place should have: `id`, `name`, `address`, `neighborhood`, `category`, `ra
 
 8. **`FeedPage`** — main feed logic:
    - Hero strip: full-width block with two horizontal `var(--blue)` bars (Chicago flag), app tagline below
-   - Feed header: "Explore Chicago" heading + `(i)` button for FeedInfoModal
+   - Feed header: a row with "Explore Chicago" heading on the left and a **"How your feed is ordered →"** text link on the right. The link opens `FeedInfoModal` (same behavior as the `(i)` button — they are the same trigger). On mobile, the link collapses to just `(i)`. Do not use the text "How your feed works" for this link — use exactly **"How your feed is ordered"**.
+   - The `(i)` icon button from previous specs is replaced by the text link on desktop. On mobile the icon-only version is acceptable as an alternative.
    - **Feed ordering logic** (pure function `orderFeed(guides, rssArticles, user, filters)`):
      1. If content type or badge filters active: filter guides to those matching any selected type/badge
      2. Sort remaining guides: editor's picks → neighborhood-matched → badge-matched → remaining
@@ -1434,9 +1469,27 @@ Each place should have: `id`, `name`, `address`, `neighborhood`, `category`, `ra
    - Seed data location and how to add new guides/users
    - Known limitations and prototype-specific simplifications (no auth, no persistence, cosmetic ATProto handles, dummy neighborhood algorithm)
 
+10. **`FeedInfoModal` — upgrade to dynamic copy** (file to modify: `client/src/components/FeedInfoModal/FeedInfoModal.jsx` + `FeedInfoModal.module.css`):
+
+   The Phase 3 modal has correct information but uses static copy. Upgrade it to reflect the user's actual current state, modelled on the v1 `FeedDisclosure` component from keeley-and-archer:
+
+   - **Dynamic intro sentence** at the top of the first section. Read from AppContext: `state.user.neighborhood`, `state.user.neighborhoodHistory`, and `state.user.badges`. Compose: "Your feed is prioritising guides near **[primary neighborhood]** (and your history: **[past neighborhoods]**) and matching your interests: **[badge list]**." If no neighborhoods or badges are set, omit the relevant clause gracefully. Do not show raw IDs — show display names only.
+
+   - **Numbered tier items** — replace the plain `<ol>` with a styled visual list. Each tier gets a bold numbered badge (circular, `var(--red)` background, white text) beside the tier name and description. Use the same 5 tiers as the Phase 3 static version.
+
+   - **"No algorithm" disclosure line** — add immediately after the tier list, before the note paragraph:
+     > "No algorithm. No engagement optimization. Just your neighborhoods and interests."
+     Style: Inter, 0.85rem, `var(--gray-500)`, italic, centred.
+
+   - **"Change your settings →" button** — add at the bottom of the modal body. On click: close the modal, then scroll the `#filter-panel` element into view (smooth behaviour). This requires adding `id="filter-panel"` to the root `<aside>` in `FilterPanel.jsx`.
+
+   - **Files also modified:** `client/src/components/FilterPanel/FilterPanel.jsx` — add `id="filter-panel"` to the `<aside>` element.
+
+   **Smoke test for this task:** Open the modal. Confirm the intro sentence names Lincoln Square and Alex's past neighborhoods. Confirm numbered badges are red circles. Confirm the no-algorithm line is present. Click "Change your settings →" — modal closes and page scrolls to the filter panel.
+
 **Final smoke test (full user-testing walkthrough):**
 1. Open `/feed` — skeleton cards appear briefly, then 17 guide cards load. RSS article cards are mixed in. SkeletonArticleCards visible briefly.
-2. Click a badge in FilterPanel — feed updates. Click a content type — filters further. Click "Clear all filters" — feed resets. Open "How your feed works" modal — both ordering and filter sections are present.
+2. Click a badge in FilterPanel — feed updates. Click a content type — filters further. Click "Clear all filters" — feed resets. Open "How your feed works" modal — dynamic intro names Lincoln Square, numbered tier badges are red, no-algorithm line is present, "Change your settings →" scrolls to filter panel.
 3. Click guide-001 — all 6 module types render. Long post collapses. Spotify iframe loads (skeleton → iframe). Map shows 3 pins.
 4. Click guide-003 — "Also contributed by: Alex Rivera" block appears.
 5. Click ♥ on guide-001 — count increments and heart goes red. Navigate away and back — like is remembered.

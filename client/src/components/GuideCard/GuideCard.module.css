@@ -57,6 +57,13 @@
   flex-wrap: wrap;
 }
 
+.chistar {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 900;
+  font-feature-settings: "dlig" 1;
+  color: var(--red);
+}
+
 .guidePill {
   background: var(--black);
   color: var(--white);
