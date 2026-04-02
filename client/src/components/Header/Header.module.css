@@ -1,0 +1,253 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--black);
+  color: var(--white);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Wordmark */
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--white);
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.star {
+  color: var(--red);
+}
+
+/* Center nav (desktop) */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navLink {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--white);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.navLink.active {
+  color: var(--red);
+}
+
+/* Neighborhoods dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdownTrigger {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--white);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.dropdownTrigger:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: var(--black);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  min-width: 180px;
+  z-index: 200;
+  overflow: hidden;
+}
+
+.dropdownItem {
+  display: block;
+  padding: 10px 16px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--white);
+  text-decoration: none;
+  transition: background 0.1s;
+}
+
+.dropdownItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Right actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.createBtn {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: var(--red);
+  color: var(--white);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+}
+
+.createBtn:hover {
+  opacity: 0.85;
+}
+
+.accountChip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.2;
+}
+
+.accountName {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--white);
+}
+
+.accountHandle {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--gray-500);
+}
+
+/* Hamburger (mobile only) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+}
+
+/* Mobile drawer */
+.drawer {
+  background: var(--black);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.drawerLink {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--white);
+  text-decoration: none;
+  padding: 10px 8px;
+  border-radius: 4px;
+}
+
+.drawerLink:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.drawerSection {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 12px 8px 4px;
+}
+
+.drawerSubLink {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--white);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.drawerSubLink:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.drawerCreateBtn {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 1rem;
+  background: var(--red);
+  color: var(--white);
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .inner {
+    height: 56px;
+  }
+
+  .nav,
+  .actions {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

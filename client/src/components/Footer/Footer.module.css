@@ -1,0 +1,55 @@
+.footer {
+  background: var(--gray-900);
+  color: var(--white);
+  margin-top: auto;
+}
+
+.flagStripes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 0 0;
+  background: var(--gray-900);
+}
+
+.stripe {
+  height: 4px;
+  background: var(--blue);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.tagline {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+}
+
+.links a {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.links a:hover {
+  color: var(--white);
+}

@@ -1,0 +1,45 @@
+:root {
+  --red: #EF002B;
+  --blue: #41B6E6;
+  --white: #FFFFFF;
+  --black: #161616;
+  --gray-100: #F5F5F5;
+  --gray-200: #E0E0E0;
+  --gray-500: #757575;
+  --gray-900: #212121;
+  --gold: #C9A84C;
+  --font-display: 'Big Shoulders Display', sans-serif;
+  --font-ui: 'Big Shoulders Text', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-article: 'Source Serif 4', serif;
+  --max-width: 1200px;
+  --spacing: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--gray-100);
+  color: var(--black);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 64px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 56px;
+  }
+}
