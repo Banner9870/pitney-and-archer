@@ -67,12 +67,6 @@
   line-height: 1.4;
 }
 
-.chistar {
-  font-family: 'Big Shoulders Display', sans-serif;
-  font-weight: 900;
-  font-feature-settings: "dlig" 1;
-  color: var(--white);
-}
 
 .editorNote {
   font-family: var(--font-article);

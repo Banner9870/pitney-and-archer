@@ -37,7 +37,7 @@ export default function FilterPanel() {
   }
 
   return (
-    <aside className={styles.panel}>
+    <aside id="filter-panel" className={styles.panel}>
       <h2 className={styles.panelTitle}>
         Filters {activeCount > 0 && <span className={styles.activeCount}>({activeCount})</span>}
       </h2>

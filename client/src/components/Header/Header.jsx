@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import ChicagoStar from '../ChicagoStar.jsx'
 import styles from './Header.module.css'
 
 const NEIGHBORHOODS = [
@@ -20,7 +21,7 @@ export default function Header() {
       <div className={styles.inner}>
         {/* Left: wordmark */}
         <Link to="/feed" className={styles.wordmark}>
-          <span className={styles.star}><span className={styles.chistar}>CHISTAR</span></span>
+          <ChicagoStar className={styles.star} />
           chicago.com
         </Link>
 

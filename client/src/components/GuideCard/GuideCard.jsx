@@ -1,7 +1,8 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { useAppContext } from '../../context/AppContext.jsx'
 import useToast from '../Toast/useToast.js'
 import Toast from '../Toast/Toast.jsx'
+import ChicagoStar from '../ChicagoStar.jsx'
 import styles from './GuideCard.module.css'
 
 const MODULE_ICONS = {
@@ -100,19 +101,19 @@ export default function GuideCard({ guide }) {
 
           {/* Overlay badges */}
           <div className={styles.overlayBadges}>
-            <span className={styles.guidePill}><span className={styles.chistar}>CHISTAR</span> GUIDE</span>
+            <span className={styles.guidePill}><ChicagoStar /> GUIDE</span>
             {guide.isSponsored && (
               <span className={styles.sponsoredPill}>Sponsored</span>
             )}
           </div>
           {guide.isEditorsPick && (
-            <span className={styles.editorsPickLabel}><span className={styles.chistar}>CHISTAR</span> Editor's Pick</span>
+            <span className={styles.editorsPickLabel}><ChicagoStar /> Editor's Pick</span>
           )}
           {guide.isReviewed && !guide.isEditorsPick && (
             <span className={styles.reviewedLabel}>Reviewed</span>
           )}
           {guide.isNewsroom && (
-            <span className={styles.newsroomLabel}><span className={styles.chistar}>CHISTAR</span> From the newsroom</span>
+            <span className={styles.newsroomLabel}><ChicagoStar /> From the newsroom</span>
           )}
         </div>
 
@@ -121,10 +122,14 @@ export default function GuideCard({ guide }) {
           <h3 className={styles.title}>{guide.title}</h3>
 
           {author && (
-            <p className={styles.authorRow}>
+            <Link
+              className={styles.authorRow}
+              to={`/profile/${author.slug}`}
+              onClick={(e) => e.stopPropagation()}
+            >
               {author.displayName}
               <span className={styles.handle}> @{author.handle}</span>
-            </p>
+            </Link>
           )}
 
           {guide.neighborhood && (

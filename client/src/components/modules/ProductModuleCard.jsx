@@ -1,3 +1,4 @@
+import ChicagoStar from '../ChicagoStar.jsx'
 import styles from './ProductModuleCard.module.css'
 
 export default function ProductModuleCard({ module: m }) {
@@ -21,7 +22,7 @@ export default function ProductModuleCard({ module: m }) {
         )}
         {m.isMemberDeal && m.dealDescription && (
           <div className={styles.memberDeal}>
-            <span className={styles.chistar}>CHISTAR</span> CPM Member Deal — {m.dealDescription}
+            <ChicagoStar /> CPM Member Deal — {m.dealDescription}
           </div>
         )}
         {m.editorNote && (

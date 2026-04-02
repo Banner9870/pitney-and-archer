@@ -1,8 +1,34 @@
 import { useEffect, useRef } from 'react'
+import { useAppContext } from '../../context/AppContext.jsx'
 import styles from './FeedInfoModal.module.css'
 
+const TIERS = [
+  {
+    label: "Editor's Picks",
+    desc: "Guides hand-selected by the chicago.com editorial team. These always appear first.",
+  },
+  {
+    label: 'Neighborhood-matched',
+    desc: "Guides tagged with your current neighborhood or any neighborhood in your history.",
+  },
+  {
+    label: 'Badge-matched',
+    desc: "Guides whose tags overlap with your interest badges.",
+  },
+  {
+    label: 'Citywide news',
+    desc: "Articles from Chicago newsrooms (WBEZ, Chicago Sun-Times) interleaved after every four guide cards.",
+  },
+  {
+    label: 'Remaining guides',
+    desc: "All other public guides, in reverse chronological order.",
+  },
+]
+
 export default function FeedInfoModal({ onClose }) {
+  const { state } = useAppContext()
   const dialogRef = useRef(null)
+  const user = state.user
 
   useEffect(() => {
     function onKeyDown(e) {
@@ -12,6 +38,53 @@ export default function FeedInfoModal({ onClose }) {
     dialogRef.current?.focus()
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [onClose])
+
+  // Build dynamic intro parts
+  const primaryNeighborhood = user.neighborhood
+  const pastNeighborhoods = user.neighborhoodHistory
+    ?.filter((h) => h.endYear)
+    .map((h) => h.name) ?? []
+  const badges = user.badges ?? []
+
+  function buildIntro() {
+    const parts = []
+    if (primaryNeighborhood) {
+      parts.push(
+        <span key="near">
+          guides near <strong>{primaryNeighborhood}</strong>
+          {pastNeighborhoods.length > 0 && (
+            <> (and your history: <strong>{pastNeighborhoods.join(', ')}</strong>)</>
+          )}
+        </span>
+      )
+    }
+    if (badges.length > 0) {
+      parts.push(
+        <span key="badges">
+          matching your interests: <strong>{badges.join(', ')}</strong>
+        </span>
+      )
+    }
+    if (parts.length === 0) return null
+    return (
+      <p className={styles.intro}>
+        Your feed is prioritising{' '}
+        {parts.map((part, i) => (
+          <span key={i}>
+            {part}
+            {i < parts.length - 1 ? ' and ' : ''}
+          </span>
+        ))}.
+      </p>
+    )
+  }
+
+  function handleSettingsClick() {
+    onClose()
+    requestAnimationFrame(() => {
+      document.getElementById('filter-panel')?.scrollIntoView({ behavior: 'smooth' })
+    })
+  }
 
   return (
     <div className={styles.overlay} onClick={(e) => { if (e.target === e.currentTarget) onClose() }}>
@@ -37,32 +110,24 @@ export default function FeedInfoModal({ onClose }) {
         <div className={styles.body}>
           <section className={styles.section}>
             <h3 className={styles.sectionTitle}>How your feed is ordered</h3>
-            <p className={styles.intro}>
-              Your feed is sorted into five tiers, in this order:
-            </p>
+
+            {buildIntro()}
+
             <ol className={styles.tierList}>
-              <li>
-                <strong>Editor's Picks</strong> — guides hand-selected by the chicago.com editorial
-                team. These always appear first.
-              </li>
-              <li>
-                <strong>Neighborhood-matched</strong> — guides tagged with your current neighborhood
-                (Lincoln Square) or any neighborhood in your history (Pilsen, Logan Square).
-              </li>
-              <li>
-                <strong>Badge-matched</strong> — guides whose tags overlap with your interest badges
-                (Food & Drink, Live Music, Parks & Outdoors, Coffee).
-              </li>
-              <li>
-                <strong>Citywide news</strong> — articles from Chicago newsrooms (WBEZ, Chicago
-                Sun-Times) that are relevant to the whole city. These are interleaved after every
-                four guide cards.
-              </li>
-              <li>
-                <strong>Remaining guides</strong> — all other public guides, in reverse
-                chronological order.
-              </li>
+              {TIERS.map((tier, i) => (
+                <li key={tier.label} className={styles.tierItem}>
+                  <span className={styles.tierBadge}>{i + 1}</span>
+                  <span>
+                    <strong>{tier.label}</strong> — {tier.desc}
+                  </span>
+                </li>
+              ))}
             </ol>
+
+            <p className={styles.noAlgorithm}>
+              No algorithm. No engagement optimization. Just your neighborhoods and interests.
+            </p>
+
             <p className={styles.note}>
               The ordering is deterministic — it's the same every time you load the feed and doesn't
               use any randomization.
@@ -99,6 +164,10 @@ export default function FeedInfoModal({ onClose }) {
               Shift+R for two seconds to reset everything.
             </p>
           </section>
+
+          <button className={styles.settingsBtn} onClick={handleSettingsClick}>
+            Change your settings →
+          </button>
         </div>
       </div>
     </div>

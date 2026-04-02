@@ -143,10 +143,10 @@ export default function GuideDetailPage() {
         {author && (
           <div className={styles.authorRow}>
             <div className={styles.authorAvatar}>{getInitials(author.displayName)}</div>
-            <div className={styles.authorInfo}>
+            <Link to={`/profile/${author.slug}`} className={styles.authorInfo}>
               <span className={styles.authorName}>{author.displayName}</span>
               <span className={styles.authorHandle}>@{author.handle}</span>
-            </div>
+            </Link>
             {author.yearsInChicago != null && (
               <span className={styles.yearsBadge}>{author.yearsInChicago} yrs in Chicago</span>
             )}

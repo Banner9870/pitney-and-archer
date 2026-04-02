@@ -35,12 +35,6 @@
   color: var(--red);
 }
 
-.chistar {
-  font-family: 'Big Shoulders Display', sans-serif;
-  font-weight: 900;
-  font-feature-settings: "dlig" 1;
-}
-
 /* Center nav (desktop) */
 .nav {
   display: flex;
