@@ -1,0 +1,147 @@
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.75rem;
+  color: var(--black);
+  margin: 0 0 32px;
+}
+
+/* Search */
+.searchSection {
+  margin-bottom: 48px;
+}
+
+.searchInput {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 14px 18px;
+  border: 2px solid var(--gray-200);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--black);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.searchInput:focus {
+  border-color: var(--blue);
+}
+
+.searchResults {
+  margin-top: 24px;
+}
+
+.noResults {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--gray-500);
+  padding: 24px 0;
+}
+
+.guideGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 56px;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+  margin: 0 0 24px;
+}
+
+/* Neighborhood grid: 4 columns desktop → 2 columns mobile */
+.neighborhoodGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.neighborhoodTile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 8px;
+  background: var(--gray-200);
+  border-radius: 4px;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--black);
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.2;
+  transition: background 0.15s, color 0.15s;
+}
+
+.neighborhoodTile:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+/* Trending: horizontal scroll row */
+.trendingRow {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+}
+
+.trendingCard {
+  flex: 0 0 280px;
+  min-width: 0;
+}
+
+/* Newsroom: 2-column mixed grid */
+.newsroomGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .guideGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .neighborhoodGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .guideGrid,
+  .newsroomGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .neighborhoodGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trendingCard {
+    flex: 0 0 260px;
+  }
+}

@@ -1,20 +1,22 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import ChicagoStar from '../ChicagoStar.jsx'
+import { useAppContext } from '../../context/AppContext.jsx'
 import styles from './Header.module.css'
 
-const NEIGHBORHOODS = [
-  'Lincoln Square',
-  'Humboldt Park',
-  'Pilsen',
-  'Hyde Park',
-  'Bronzeville',
-  'Wicker Park',
-]
-
 export default function Header() {
+  const { state } = useAppContext()
+  const { communityAreas } = state
+
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [neighborhoodsOpen, setNeighborhoodsOpen] = useState(false)
+  const [neighborhoodSearch, setNeighborhoodSearch] = useState('')
+
+  const filteredAreas = useMemo(() => {
+    if (!neighborhoodSearch.trim()) return communityAreas
+    const q = neighborhoodSearch.toLowerCase()
+    return communityAreas.filter((a) => a.name.toLowerCase().includes(q))
+  }, [communityAreas, neighborhoodSearch])
 
   return (
     <header className={styles.header}>
@@ -46,23 +48,45 @@ export default function Header() {
           <div className={styles.dropdown}>
             <button
               className={styles.dropdownTrigger}
-              onClick={() => setNeighborhoodsOpen((o) => !o)}
+              onClick={() => {
+                setNeighborhoodsOpen((o) => !o)
+                setNeighborhoodSearch('')
+              }}
               aria-expanded={neighborhoodsOpen}
             >
               Neighborhoods ▾
             </button>
             {neighborhoodsOpen && (
               <div className={styles.dropdownMenu}>
-                {NEIGHBORHOODS.map((name) => (
-                  <Link
-                    key={name}
-                    to={`/neighborhood/${name.toLowerCase().replace(/\s+/g, '-')}`}
-                    className={styles.dropdownItem}
-                    onClick={() => setNeighborhoodsOpen(false)}
-                  >
-                    {name}
-                  </Link>
-                ))}
+                <div className={styles.dropdownSearch}>
+                  <input
+                    type="text"
+                    className={styles.dropdownSearchInput}
+                    placeholder="Search neighborhoods…"
+                    value={neighborhoodSearch}
+                    onChange={(e) => setNeighborhoodSearch(e.target.value)}
+                    autoFocus
+                    aria-label="Filter neighborhoods"
+                  />
+                </div>
+                <div className={styles.dropdownList}>
+                  {filteredAreas.map((area) => (
+                    <Link
+                      key={area.id}
+                      to={`/neighborhood/${area.slug}`}
+                      className={styles.dropdownItem}
+                      onClick={() => {
+                        setNeighborhoodsOpen(false)
+                        setNeighborhoodSearch('')
+                      }}
+                    >
+                      {area.name}
+                    </Link>
+                  ))}
+                  {filteredAreas.length === 0 && (
+                    <span className={styles.dropdownEmpty}>No results</span>
+                  )}
+                </div>
               </div>
             )}
           </div>
@@ -102,14 +126,14 @@ export default function Header() {
             Explore
           </Link>
           <div className={styles.drawerSection}>Neighborhoods</div>
-          {NEIGHBORHOODS.map((name) => (
+          {communityAreas.map((area) => (
             <Link
-              key={name}
-              to={`/neighborhood/${name.toLowerCase().replace(/\s+/g, '-')}`}
+              key={area.id}
+              to={`/neighborhood/${area.slug}`}
               className={styles.drawerSubLink}
               onClick={() => setDrawerOpen(false)}
             >
-              {name}
+              {area.name}
             </Link>
           ))}
           <Link
