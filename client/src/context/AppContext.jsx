@@ -107,34 +107,14 @@ export function AppProvider({ children }) {
     }
   }, [])
 
-  // Fetch community areas from Socrata; fall back to static JSON on failure
+  // Load community areas from bundled static JSON (no Socrata call needed)
   useEffect(() => {
-    async function fetchCommunityAreas() {
-      try {
-        const res = await fetch(
-          'https://data.cityofchicago.org/resource/igwz-8jzy.json?$limit=100'
-        )
-        if (!res.ok) throw new Error(`HTTP ${res.status}`)
-        const data = await res.json()
-        const areas = data.map((row) => ({
-          id: String(row.area_numbe ?? row.area_num_1 ?? ''),
-          name: toTitleCase(row.community ?? ''),
-          slug: toSlug(row.community ?? ''),
-          population: row.population ? Number(row.population) : undefined,
-        }))
-        dispatch({ type: 'SET_COMMUNITY_AREAS', payload: areas })
-      } catch {
-        // Fall back to static JSON
-        try {
-          const res = await fetch('/fallback-community-areas.json')
-          const data = await res.json()
-          dispatch({ type: 'SET_COMMUNITY_AREAS', payload: data })
-        } catch {
-          // Silently fail — community areas are non-critical for initial render
-        }
-      }
-    }
-    fetchCommunityAreas()
+    fetch('/fallback-community-areas.json')
+      .then((r) => r.json())
+      .then((data) => dispatch({ type: 'SET_COMMUNITY_AREAS', payload: data }))
+      .catch(() => {
+        // Silently fail — community areas are non-critical for initial render
+      })
   }, [])
 
   // Fetch RSS articles from Express proxy
@@ -165,22 +145,3 @@ export function useAppContext() {
   return ctx
 }
 
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-
-function toTitleCase(str) {
-  return str
-    .toLowerCase()
-    .split(' ')
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ')
-}
-
-function toSlug(str) {
-  return str
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-')
-}
