@@ -20,7 +20,7 @@ export default function Header() {
       <div className={styles.inner}>
         {/* Left: wordmark */}
         <Link to="/feed" className={styles.wordmark}>
-          <span className={styles.star}>★</span>
+          <span className={styles.star}><span className={styles.chistar}>CHISTAR</span></span>
           chicago.com
         </Link>
 
@@ -72,10 +72,10 @@ export default function Header() {
           <Link to="/guide/new" className={styles.createBtn}>
             + Create Guide
           </Link>
-          <div className={styles.accountChip}>
+          <Link to="/profile/alexrivera" className={styles.accountChip}>
             <span className={styles.accountName}>Alex Rivera</span>
             <span className={styles.accountHandle}>@alexrivera</span>
-          </div>
+          </Link>
         </div>
 
         {/* Mobile: hamburger */}

@@ -1,0 +1,231 @@
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.notFound {
+  max-width: 600px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.notFound h2 {
+  font-family: 'Big Shoulders Text', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--black);
+  margin: 0 0 1rem;
+}
+
+.notFound a {
+  color: var(--red);
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── Header ──────────────────────────────────────────────────────────── */
+.profileHeader {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--gray-200);
+  margin-bottom: 2rem;
+}
+
+.headerMain {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.displayName {
+  font-family: 'Big Shoulders Text', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--black);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.handle {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: var(--gray-500);
+  margin: 0;
+}
+
+/* Tenure badge — prominent trust signal */
+.tenureBadge {
+  display: inline-flex;
+  align-items: center;
+  background: var(--red);
+  color: var(--white);
+  font-family: 'Big Shoulders Text', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.35rem 1rem;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+  width: fit-content;
+}
+
+.neighborhoodHistory {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  margin: 0;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  background: var(--gray-200);
+  color: var(--black);
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+}
+
+/* Journalist newsroom line */
+.newsroomBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.25rem 0 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+.star {
+  color: var(--red);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.newsroomText {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.followBtn {
+  margin-top: 0.75rem;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  border: 2px solid var(--black);
+  color: var(--black);
+  font-family: 'Big Shoulders Text', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.followBtn:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+/* ── Hinge prompts ───────────────────────────────────────────────────── */
+.hingeSection {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-family: 'Big Shoulders Text', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--black);
+  margin: 0 0 1rem;
+}
+
+.hingeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .hingeGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Guide tabs ──────────────────────────────────────────────────────── */
+.guidesSection {
+  margin-top: 0.5rem;
+}
+
+.tabBar {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--gray-200);
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  font-family: 'Big Shoulders Text', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.6rem 1.25rem;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  color: var(--gray-500);
+  transition: color 0.15s;
+}
+
+.tab:hover {
+  color: var(--black);
+}
+
+.tabActive {
+  color: var(--black);
+  border-bottom-color: var(--red);
+}
+
+.emptyState {
+  padding: 2rem 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--gray-500);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.emptyState p {
+  margin: 0;
+}
+
+.createCta {
+  color: var(--red);
+  font-family: 'Big Shoulders Text', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .displayName {
+    font-size: 2rem;
+  }
+}
