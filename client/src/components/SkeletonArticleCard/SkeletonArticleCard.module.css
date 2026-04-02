@@ -1,0 +1,57 @@
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--gray-200) 25%,
+    var(--gray-100) 50%,
+    var(--gray-200) 75%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.4s infinite linear;
+  border-radius: 3px;
+}
+
+.card {
+  background: var(--white);
+  border-top: 4px solid var(--gray-200);
+  border-radius: 4px;
+  padding: 14px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sourceBar {
+  height: 11px;
+  width: 35%;
+}
+
+.headlineBar {
+  height: 16px;
+  width: 90%;
+}
+
+.headlineBarShort {
+  height: 16px;
+  width: 65%;
+}
+
+.summaryBar {
+  height: 13px;
+  width: 100%;
+}
+
+.summaryBarShort {
+  height: 13px;
+  width: 75%;
+}
+
+.timestampBar {
+  height: 11px;
+  width: 25%;
+  margin-top: 2px;
+}

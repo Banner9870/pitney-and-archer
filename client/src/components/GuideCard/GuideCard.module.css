@@ -1,0 +1,196 @@
+.card {
+  background: var(--white);
+  border-top: 4px solid var(--red);
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover,
+.card:focus-visible {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
+/* Sponsored guide: gold left border instead of red top border */
+.sponsored {
+  border-top: none;
+  border-left: 4px solid var(--gold);
+}
+
+/* Cover image */
+.coverWrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--gray-200);
+  overflow: hidden;
+}
+
+.coverImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.coverPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: var(--gray-200);
+}
+
+/* Overlay badges */
+.overlayBadges {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.guidePill {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 2px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sponsoredPill {
+  background: var(--gold);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+.editorsPickLabel,
+.reviewedLabel,
+.newsroomLabel {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.72);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+/* Card body */
+.body {
+  padding: 12px 14px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.title {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  color: var(--black);
+}
+
+.authorRow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  line-height: 1.3;
+}
+
+.handle {
+  opacity: 0.85;
+}
+
+.neighborhoodTag {
+  display: inline-block;
+  background: var(--blue);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 2px;
+  align-self: flex-start;
+}
+
+/* Module icon strip */
+.moduleStrip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.moduleIcon {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* Engagement row */
+.engagementRow {
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top: 1px solid var(--gray-200);
+  flex-wrap: wrap;
+}
+
+.engBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  padding: 4px 8px;
+  border-radius: 3px;
+  transition: background 0.1s, color 0.1s;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.engBtn:hover {
+  background: var(--gray-100);
+  color: var(--black);
+}
+
+.engBtn:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 1px;
+}
+
+.liked {
+  color: var(--red);
+  font-weight: 500;
+}
+
+.helpful {
+  color: #2e7d32;
+  font-weight: 500;
+}

@@ -1,0 +1,136 @@
+.panel {
+  background: var(--white);
+  border-radius: 4px;
+  padding: 16px;
+  position: sticky;
+  top: 80px;
+}
+
+/* On mobile: FilterPanel appears above the feed */
+@media (max-width: 768px) {
+  .panel {
+    position: static;
+    order: -1;
+  }
+}
+
+.panelTitle {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.activeCount {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+/* Checkbox group */
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--black);
+  cursor: pointer;
+  min-height: 24px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--blue);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Badge chip group */
+.badgeGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.badgeChip {
+  background: none;
+  border: 1.5px solid var(--gray-200);
+  color: var(--black);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  padding: 4px 10px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s, color 0.1s;
+  min-height: 30px;
+}
+
+.badgeChip:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.badgeChip:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.badgeActive {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.badgeActive:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+/* Clear all */
+.clearAll {
+  background: none;
+  border: none;
+  color: var(--red);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.clearAll:hover {
+  opacity: 0.8;
+}
+
+.clearAll:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}

@@ -1,0 +1,158 @@
+/* Hero strip — Chicago flag inspired */
+.heroStrip {
+  background: var(--black);
+  padding: 20px 24px 18px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+}
+
+.flagBars {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.flagBar {
+  height: 3px;
+  background: var(--blue);
+  border-radius: 1px;
+}
+
+.tagline {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.35rem;
+  color: var(--white);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+/* Feed header row */
+.feedHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.feedTitle {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--black);
+  letter-spacing: 0.01em;
+  line-height: 1;
+}
+
+.infoBtn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--gray-500);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  min-width: 32px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.1s, color 0.1s;
+}
+
+.infoBtn:hover {
+  background: var(--gray-200);
+  color: var(--black);
+}
+
+.infoBtn:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.filterNote {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-bottom: 12px;
+}
+
+/* Feed grid — single column (cards stack vertically) */
+.feedGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Load more */
+.loadMoreWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  padding-bottom: 24px;
+}
+
+.loadMoreBtn {
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 12px 28px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.15s;
+  min-height: 44px;
+}
+
+.loadMoreBtn:hover {
+  background: var(--gray-900);
+}
+
+.loadMoreBtn:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
+/* Empty state */
+.emptyState {
+  text-align: center;
+  padding: 48px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.emptyState p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--gray-500);
+}
+
+.clearFiltersBtn {
+  background: none;
+  border: 1.5px solid var(--red);
+  color: var(--red);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.clearFiltersBtn:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+/* feedMain takes the first column in the Layout grid */
+.feedMain {
+  min-width: 0;
+}
